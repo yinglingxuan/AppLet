@@ -1,0 +1,43 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+page{
+    font-family: PingFangSC-Regular,sans-serif, Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+    background-color: #f3f3f3;
+    font-size: 28rpx;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 我的订单 */
+.search_no{
+    width: 100%; 
+    display: block;
+    color: #666;
+    text-align: center;
+    margin-top: 260rpx
+}
+.font_14 {
+  width: 116rpx;
+  height: 116rpx;
+  margin: auto
+}
+.font_14 image.scimg{
+    width:100%;
+    height: 100%;
+    display: inline-block;
+}
+/* END我的订单 */
+
+/* 解决vant图标总是对不齐问题 */
+.van-icon{
+  top: 2rpx;
+}
+/* END解决vant图标总是对不齐问题 */

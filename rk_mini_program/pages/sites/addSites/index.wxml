@@ -1,0 +1,60 @@
+<!--pages/sites/addSites/index.wxml-->
+<view style='background:#fff;height:{{winHeight}}px;'>
+    <view class='addSites-body'>
+        <view class='input-list'>
+            <view class='paste'>
+                 <textarea placeholder="粘贴地址自动填写逗号分隔 收货人， 手机号，地址" name="textarea"  bindinput='inputValue' value='{{inputValue}}'/>
+            </view>
+            <view class='discern' bindtap='partition'>识别</view>
+        </view>
+        <view class='input-list'>
+            <view class='left'><text>*</text>收货人</view>
+            <view class='right'>
+                  <input  placeholder='请填写收货人真实姓名' value='{{inputName}}' bindinput='inputName'></input>
+            </view>
+        </view>
+        <view class='input-list'>
+            <view class='left'><text>*</text>联系方式</view>
+            <view class='right'>
+                <input  placeholder='请填写您的手机号' value='{{inputMobile}}' bindinput='inputMobile'></input>
+            </view>
+        </view>
+        <view class='input-list'>
+            <view class='left'><text>*</text>所在地区</view>
+            <view class='rightOne' bindtap='onHides'>
+                <view class='rightOne-text' bindtap='onHides'>
+                    {{inputRegion}}
+                </view>
+                <view class='rightOne-imgs'>
+                    <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fanhui@2x.png'></image>
+                </view>
+            </view>
+        </view>
+         <view class='input-list'>
+            <view class='left'><text>*</text>详细地址</view>
+            <view class='right'>
+                <input  type='text' value='{{inputSites}}' bindinput='inputSites'></input>
+            </view>
+        </view>
+
+         <view class='input-list'>
+            <view class='left'>默认地址</view>
+            <view class='right-checked'>
+               <van-switch checked="{{ checked }}" bind:change="onChange" active-color="#8EB85C;"/>
+            </view>
+        </view>
+    </view>
+    
+    <view class='add-button' bindtap='saveSites'>
+        <view>保存</view>
+    </view>
+
+
+
+    <!-- 弹出层 -->
+    <view>
+        <van-popup show="{{ show }}" position="bottom" bind:click-overlay='onHideOne'>
+          <van-area area-list="{{ demoData}}" value="110101" bind:confirm="offSites"/>
+        </van-popup>
+    </view>
+</view>

@@ -1,0 +1,80 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/search/index",
+    "pages/details/index",
+    "pages/details/comment/index",
+    "pages/details/affirmOrder/index",
+    "pages/sites/index",
+    "pages/sites/addSites/index",
+    "pages/payment/index",
+    "pages/shoppingTrolley/index",
+    "pages/community/index",
+    "pages/community/communityDetails/index",
+    "pages/community/activityDetails/index",
+    "pages/myCollect/index",
+    "pages/myReferrer/index",
+    "pages/myMoney/index",
+    "pages/myMoney/accountMoney/index",
+    "pages/myMoney/withdrawDeposit/index",
+    "pages/myMoney/recharge/index",
+    "pages/my/my",
+    "pages/userCenter/myDiscount/index",
+    "pages/userCenter/myOrder/order",
+    "pages/userCenter/myEvaluate/index",
+    "pages/userCenter/bindNum/index",
+    "pages/userCenter/accountSafe/index",
+    "pages/userCenter/changePassword/index",
+    "pages/userCenter/add_bankCard/index",
+    "pages/userCenter/myBankCard/index",
+    "pages/userCenter/relieveBind/index",
+    "pages/member/index",
+    "pages/member/memberPay/index",
+    "pages/home/impower/index",
+    "pages/details/orderSerial/index"
+  ],
+  "usingComponents": {
+    "van-icon": "dist/icon/index",
+    "van-radio": "dist/radio/index",
+    "van-radio-group": "dist/radio-group/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#8EB85C",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "selectedIconPath": "imgs/shouye1.png",
+        "iconPath": "imgs/shouye2.png",
+        "pagePath": "pages/home/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "imgs/sheqv1.png",
+        "iconPath": "imgs/sheqv2.png",
+        "pagePath": "pages/community/index",
+        "text": "社区"
+      },
+      {
+        "selectedIconPath": "imgs/gouwuche1.png",
+        "iconPath": "imgs/gouwuche2.png",
+        "pagePath": "pages/shoppingTrolley/index",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "imgs/wode1.png",
+        "iconPath": "imgs/wode2.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

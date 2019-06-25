@@ -1,0 +1,63 @@
+/* components/lists/index.wxss */
+
+.uls{   
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15rpx;
+  padding-top: 12rpx;
+}
+/* 商品列表 */
+.uls .lis{
+  width: 45%;
+  margin: 12rpx;
+  background: #fff;
+  box-shadow:0 0 6rpx 4rpx rgba(0,0,0, 0.04);
+  border-radius: 10rpx;
+}
+/* 商品图片 */
+.uls .lis .lis-imgs image{
+  width: 100%;
+  height: 350rpx;
+}
+/* 商品名称 */
+.uls .lis  .list-name{
+  /* border: solid 1rpx red; */
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+/* 商品价钱 */
+.uls .lis .money{
+   font-size: 30rpx;
+   color: #FF5C32;
+   font-weight: 600;
+   margin-top: 30rpx;
+   padding-left: 10rpx;
+}
+/* 最后一行 */
+.uls .lis .bommots{
+   display: flex;
+   font-size: 20rpx;
+   color: #999999;
+   margin-bottom: 20rpx;
+   padding-left: 10rpx;
+   padding-right: 10rpx;
+}
+/* 左边的价格 */
+.uls .lis .bommots .left{
+  width: 50%;
+  text-decoration:line-through;
+}
+/* 右边的几人付款 */
+.uls .lis .bommots .right{
+  text-align: right;
+  width: 50%;
+}

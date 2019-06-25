@@ -1,0 +1,135 @@
+/* pages/userCenter/myEvaluate/index.wxss */
+page {
+	background: #f4f4f4;
+}
+
+/* 上传样式 */
+.main{
+  width: 94%;
+  margin: 20rpx auto;
+  background: white;
+  border-radius: 16rpx;
+  color: #999999;
+  padding: 40rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+}
+icon {
+  vertical-align: middle;
+}
+.weui-cells{
+  position: relative;
+}
+.weui-cell {
+  /* padding: 20rpx 30rpx; */
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+.weui-cell_input {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.weui-uploader__hd {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding-bottom: 20rpx;
+  align-items: center;
+}
+.weui-uploader__title {
+  flex: 1;
+}
+.weui-uploader__info {
+  color: #b2b2b2;
+}
+.weui-uploader__bd {
+  margin-bottom: -8rpx;
+  margin-right: -18rpx;
+  overflow: hidden;
+  text-align: center;
+}
+.weui-uploader__files{
+  display: inline-block;
+}
+.weui-uploader__file {
+  margin-right: 14rpx;
+  margin-bottom: 14rpx;
+  display: inline-block;
+  position: relative;
+ 
+}
+.weui-uploader__img {
+  display: inline-block;
+  width:108rpx;
+  height:108rpx;
+  padding-top:24rpx;
+  padding-bottom:4rpx;
+  margin:0  5rpx;
+}
+.closeClick{
+position: absolute;
+z-index: 999;
+top: 10rpx;
+right:-10rpx;
+}
+.weui-uploader__input-box {
+  display: inline-block;
+  /* margin-right: 14rpx; */
+  margin-bottom:14rpx;
+  width: 108rpx;
+  height: 108rpx;
+  /* margin:0 8rpx; */
+}
+.weui-uploader__input-box:before, .weui-uploader__input-box:after {
+  content: " ";
+  transform: translate(-50%, -50%);
+}
+.weui-uploader__input-box:before {
+  width: 4rpx;
+  height: 79rpx;
+}
+.weui-uploader__input-box:after {
+  width: 79rpx;
+  height: 4rpx;
+}
+.weui-uploader__input_img{
+  width: 108rpx;
+  height: 108rpx;
+  position: relative
+}
+/* .weui-uploader__input_img text{
+  position:relative;
+  top: -40rpx;
+  color: #ccc;
+} */
+.imgNum{
+  position:absolute;
+  /* top: -40rpx; */
+  right: 0;
+  bottom: -24rpx;
+  color: #ccc;
+}
+.hideTrue {
+  display: none
+}
+/* END上传图片 */
+
+/* 底部 */
+.foot{
+  height: 100rpx;
+  width: 90%;
+  background-color: #8EB85C;
+  font-size: 38rpx;
+  line-height: 100rpx;
+  color: white;
+  text-align: center;
+  border-radius: 6rpx;
+  position: absolute;
+  bottom: 18rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

@@ -1,0 +1,80 @@
+/* pages/userCenter/add_bankCard/index.wxss */
+.bindTitle{
+  width: 90%;
+  height: 68rpx;
+  font-size: 24rpx;
+  color: #999;
+  margin: 0 auto;
+  line-height: 68rpx;
+}
+.changeInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 16rpx;
+  background-color: #fff;
+  padding: 30rpx;
+}
+.changeInfoName{
+  /* position: relative; */
+  height: 80rpx;
+  width: 100%;
+  /* border-bottom: 2rpx solid #E5E5E5; */
+  margin-bottom: 20rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  line-height: 80rpx;
+  color: #666;
+}
+
+.changeInfoName .listTitle{
+  flex:0 0 auto;
+  width: 150rpx;
+  height: 100%;
+  font-size: 32rpx;
+  margin-right: 24rpx;
+}
+.changeInfoName .listTitle text{
+  color: #f00;
+}
+.changeInfoName input{
+  /* width: 60%; */
+  flex-grow: 1;
+  height:100%;
+  background-color: #FAFAFA;
+  border-radius: 8rpx;
+  padding-left: 20rpx;
+}
+
+.radioBox{
+  display: flex;
+  align-items: center;
+}
+van-radio{
+  margin-right: 36rpx;
+}
+.radioBox .van-radio__label{
+  margin-left: 10rpx;
+}
+.changeBtn{
+  width: 90%;
+  height: 100rpx;
+  background: #8EB85C;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 6rpx;
+  line-height: 100rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left:0;
+  right: 0;
+  margin: auto;
+}
+.changeBtn::after{
+  border: none;
+}

@@ -1,0 +1,63 @@
+<!--pages/site /index.wxml-->
+
+<view  style='height:{{winHeight}}px;background: #F6F6F6;'>
+
+    <view class='middle' wx:if='{{demoData}}'>
+        <view class='middle-body'>
+            <view class='middle-imgs'></view>
+            <view class='middle-text'>你还没有收货地址，快去添加吧</view>
+        </view>
+    </view>
+
+    <view wx:if='{{!demoData}}'>
+        <view class='sites-ul'>
+            <van-radio-group value="{{ radio }}" bind:change="onChange">
+                <view class='sites-li'>
+                    <view class='sites-name'>李大大 1326676767</view>
+                    <view class='sites-details'>河北 张家口市 张北县 一环东湖路将口里36号</view>
+                    <view class='sites-function'>
+                        <view class='sites-radio'>
+                            <van-radio  name="1" checked-color="#07c160"><text style='color: #8EB85C;'>默认地址</text></van-radio>
+                        </view>
+                        <view class='sites-redact'>编辑</view>
+                        <view class='sites-delete'>删除</view>
+                    </view>
+                </view>
+
+
+                <view class='sites-li'>
+                    <view class='sites-name'>李大大 1326676767</view>
+                    <view class='sites-details'>河北 张家口市 张北县 一环东湖路将口里36号</view>
+                    <view class='sites-function'>
+                        <view class='sites-radio'>
+                            <van-radio  name="2" checked-color="#07c160"><text style='color: #8EB85C;'>默认地址</text></van-radio>
+                        </view>
+                        <view class='sites-redact' bindtap='sitesRedact'>编辑</view>
+                        <view class='sites-delete' bindtap='sitesDelete'>删除</view>
+                    </view>
+                </view>
+              </van-radio-group>
+        </view>
+
+        <!-- 弹出层 -->
+        <view class='show-body'>
+            <van-popup show="{{ show }}" bind:close="onClose">
+                <view class='show-hint'>提示</view>
+                <view class='show-text'>是否删除该地址</view>
+                  <view class='show-botton'>
+                      <view class='show-cancel' bindtap='showCancel'>取消</view>
+                      <view class='show-de' bindtap='offDelete' >删除该地址</view>
+                </view>
+            </van-popup>
+              
+        </view>
+
+        
+    </view>
+
+
+
+    <view class='addButton-body'>
+      <view class='addButton' bindtap='onInput'>新增地址</view>
+    </view>
+</view>

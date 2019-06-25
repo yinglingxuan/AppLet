@@ -1,0 +1,328 @@
+/* pages/my/my.wxss */
+
+page,#userCenter {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#userCenter .rk-users-info {
+  position: relative;
+  width: 100%;
+  height: 360rpx;
+  background-color: #fff;
+  /* z-index: 0; */
+  background: url("https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/myBackground.png") no-repeat center center;
+  background-size: 100% auto;
+}
+
+#userCenter .content {
+  position: relative;
+}
+
+/* #userCenter .content .gift{
+  position: ;
+} */
+
+.users-infoBox {
+  height: 150rpx;
+}
+
+#userCenter .rk-users-info .head-img {
+  width: 102rpx;
+  height: 102rpx;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-top: 30rpx;
+  margin-left: 28rpx;
+  float: left;
+}
+
+#userCenter .rk-users-info .nick {
+  font-size: 32rpx;
+  margin-top: 36rpx;
+  margin-left: 20rpx;
+  /* font-weight: bold; */
+  float: left;
+  color: #fff;
+}
+
+#userCenter .rk-users-info .icon-set {
+  width: 68rpx;
+  height: 68rpx;
+  display: inline-block;
+  position: absolute;
+  top: 60rpx;
+  right: 28rpx;
+}
+
+#userCenter .rk-users-info .icon-set image {
+  width: 100%;
+  height: 100%;
+}
+
+#userCenter .user-order-static {
+  height: 144rpx;
+  /* padding: 24rpx 6rpx; */
+  display: flex;
+  align-items: center;
+}
+
+#userCenter .user-order-static .item {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 25%;
+  text-align: center;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+#userCenter .user-order-static .userData {
+  font-size: 32rpx;
+}
+
+#userCenter .user-order-static p {
+  margin-top: 56rpx;
+}
+
+.rk-icon {
+  width:40rpx;
+  height:44rpx;
+  font: normal normal normal 14px/14px "vant-icon";
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 14rpx;
+}
+
+.rk-icon image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 加入会员 */
+
+.vipCardBox {
+  width: 120%;
+  height: 120rpx;
+  position: absolute;
+  left: -10%;
+  bottom: -60rpx;
+  border-radius: 0 0 50% 50%;
+  overflow: hidden;
+  background-color: #9BD05B;
+}
+
+.vipCardBox .vipCard {
+  width: 75%;
+  height: 120rpx;
+  margin: 0 auto;
+  border-radius: 16rpx 16rpx 0 0;
+  background: url('https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/wodebeijing%402x.png') no-repeat center;
+  background-size: 100% auto;
+  position: relative;
+}
+
+.vipCardBox .vipCard text {
+  position: absolute;
+  left: 32rpx;
+  top: 32rpx;
+  font-size: 24rpx;
+  background-image: -webkit-linear-gradient(left bottom, #f6be55, #fbdd9e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nowDiscount {
+  width: 142rpx;
+  height: 56rpx;
+  display: flex;
+  justify-content: center;
+  line-height: 56rpx;
+  background: linear-gradient(to left, #fdde9f, #ffc761);
+  border-radius: 8rpx 0 0 8rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #5b4722;
+  position: absolute;
+  right: 0;
+  top: 20rpx;
+  overflow: hidden;
+}
+
+/* END加入会员 */
+
+/* 我的商城 */
+
+.myMallBox {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+
+.myMallTitle {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  color:#333333;
+  font-weight: 600;
+  /* padding-left: 6rpx; */
+  text-indent:6rpx;
+  border-bottom: 1rpx solid #F7F7F7;
+}
+
+.myMall {
+  width: 100%;
+  height: 144rpx;
+  /* padding: 24rpx 6rpx; */
+  display: flex;
+  align-items: center;
+}
+
+.myMall .item,.rk-user-relevantHelp .item {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 33%;
+  text-align: center;
+  color: #666;
+  font-size: 24rpx;
+}
+
+.myMall .userData {
+  font-size: 32rpx;
+}
+
+.myMall p {
+  margin-top: 56rpx;
+}
+
+/* END我的商城*/
+
+/* 个人中心导航 */
+.rk-user-relevantHelp {
+  /* height: 144px; */
+  padding: 20rpx 6rpx;
+  font-size: 24rpx;
+  width: 90%;
+  margin: 20rpx auto;
+  border-radius: 8rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.rk-user-relevantHelp .item {
+  display: inline-block;
+  margin: 26rpx 0;
+}
+
+#userCenter .rk-user-relevantHelp .p {
+  /* margin-top: 28px; */
+  color: #666;
+}
+
+#userCenter .icon-regret {
+  width: 40rpx;
+  height: 40rpx;
+  top: 50%;
+  left: 20rpx;
+  margin-top: -18rpx;
+  /* background-image: url("../../img/userCenter/icon-regret.png"); */
+}
+
+#userCenter #pop-box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+
+#tip-box {
+  position: absolute;
+  top: -120rpx;
+  left: 0;
+  width: 290rpx;
+  line-height: 88rpx;
+  text-align: right;
+  border: 1px solid #292929;
+  border-radius: 4px;
+  padding: 28rpx 20rpx;
+  background-color: #fff;
+  z-index: 1;
+  display: none;
+}
+
+#tip-box .sanjiao {
+  position: absolute;
+  bottom: -11rpx;
+  left: 82rpx;
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 1px solid #292929;
+  border-right: 1px solid #292929;
+  transform: rotate(135deg);
+  background-color: #fff;
+}
+
+#userCenter .pop {
+  position: relative;
+  margin: 55% auto;
+  line-height: 44rpx;
+  text-align: center;
+  width: 90%;
+  border-radius: 8rpx;
+  background-color: #fff;
+  z-index: 1;
+}
+
+#userCenter .pop .p {
+  padding: 100rpx 60rpx;
+}
+
+.layui-m-layerbtn {
+  width: 100%;
+  position: relative;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 36rpx;
+  border-top: 1px solid #d0d0d0;
+  background-color: #f2f2f2;
+  border-radius: 0 0 10rpx 10rpx;
+  color: #40affe;
+  text-align: center;
+}
+
+.vipGradeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: 92rpx;
+  left: 152rpx;
+  font-size: 28rpx;
+}
+
+.vipGradeBox .vipGrade, .minVipGrade {
+  /* width: 118rpx; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 20rpx;
+}
+
+.vipGradeBox image {
+  width: 118rpx;
+  vertical-align: middle;
+}
+ .minVipGrade image{
+   width: 28rpx;
+ }

@@ -1,0 +1,64 @@
+/* pages/home/impower/index.wxss */
+.impoer-body{
+   width: 90%;
+   margin: auto;
+   display: flex;
+   margin-top: 40rpx;
+}
+.impoer-body .impoer-imgs{
+   margin-right: 30rpx;
+}
+.impoer-body .impoer-imgs image{
+   width: 100rpx;
+   height: 100rpx;
+   border-radius: 50%;
+}
+.impoer-body .impoer-text{
+   padding-top: 30rpx;
+   color: #999999;
+   font-size: 30rpx;
+   width: 60%;
+}
+.impoer-body .impoer-text .impoer-txt{
+   color: #666666;
+   font-size: 50rpx;
+   margin-top: 20rpx;
+}
+.impoert-loge{
+   margin-top: 100rpx;
+}
+.impoert-loge .loge-imgs{
+   width: 100rpx;
+   margin: auto;
+}
+.impoert-loge .loge-imgs image{
+   width: 100rpx;
+   height: 100rpx;
+   border-radius:50%;
+}
+.impoert-loge .loge-text{
+   text-align: center;
+   line-height: 70rpx;
+   font-size: 30rpx;
+}
+
+.login{
+   width: 400rpx;
+   margin: 0 auto;
+   border-radius: 30rpx;
+   background: #7AD23E;
+   color: #fff;
+   border: 0;
+   display: flex;
+   margin-top: 50rpx;
+}
+.login .icon{
+    width: 70rpx;
+    height: 70rpx;
+    background: #fff;
+    background: url("https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/20190527114756.png") no-repeat;
+    background-size: 100%;
+    margin-top: 20rpx;
+    margin-left: 40rpx;
+    margin-right: 10rpx;
+}

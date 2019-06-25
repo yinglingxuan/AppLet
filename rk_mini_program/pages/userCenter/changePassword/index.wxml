@@ -1,0 +1,21 @@
+<!--pages/userCenter/changePassword/index.wxml-->
+<view class='changeInfo'>
+  <view class='changeInfoName'>
+    <view class='listTitle'>已绑定的手机号：</view>
+    <input placeholder='请输入手机号' bindinput='getPhoneValue' value='{{phone}}' />
+  </view>
+  <view class='changeInfoName'>
+    <view class='listTitle'>新密码：</view>
+    <input placeholder='请输入新密码' bindinput='getPhoneValue' value='{{phone}}' />
+  </view>
+  <view class='changeInfoName'>
+    <view class='listTitle'>确认新密码：</view>
+    <input placeholder='请确认新密码' bindinput='getPhoneValue' value='{{phone}}' />
+  </view>
+  <view class='changeInfoName'>
+    <view class='listTitle'>验证码：</view>
+    <input placeholder='请输入手机验证码' bindinput='getCodeValue' value='{{code}}' style='width:70%;' />
+    <view class='codeBtn' bindtap='getVerificationCode' disabled='{{disabled}}'>获取验证码{{codename}}</view>
+  </view>
+  <button class='changeBtn' bindtap='save'>确认</button>
+</view>

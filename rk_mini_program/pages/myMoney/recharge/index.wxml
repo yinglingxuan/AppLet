@@ -1,0 +1,15 @@
+<!--pages/myMoney/recharge/index.wxml-->
+<view style='background:#fff;height:{{winHeight}}px;'>
+    <view class='account-top'>
+        <view class='top-title'>当前余额</view>
+        <view class='top-money'>10</view>
+    </view>
+    <view class='recharge-body'>
+        <view class='recharge-title'>充值金额</view>
+        <view class='recharge-input'>
+            <input type='text' placeholder='自定义金额 '></input>
+        </view>
+
+        <view class='button'>立即充值</view>
+    </view>
+</view>

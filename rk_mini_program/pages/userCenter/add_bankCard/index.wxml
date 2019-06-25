@@ -1,0 +1,27 @@
+<!--pages/userCenter/add_bankCard/index.wxml-->
+<view class='bindTitle'>请绑定本人银行卡</view>
+<view class='changeInfo'>
+  <view class='changeInfoName'>
+    <view class='listTitle'>
+      <text>*</text>开户银行</view>
+    <input placeholder='请选择银行' bindinput='getUserIdCardBankType'/>
+  </view>
+  <view class='changeInfoName'>
+    <view class='listTitle'>
+      <text>*</text>开户姓名</view>
+    <input placeholder='输入姓名' bindinput='getUserIdCardName'/>
+  </view>
+  <view class='changeInfoName'>
+    <view class='listTitle'>
+      <text>*</text>开户卡号</view>
+    <input placeholder='输入卡号' type='number' bindinput='getUserIdCardNumber' />
+  </view>
+  <view class='changeInfoName'>
+    <view class='listTitle'>是否默认</view>
+    <van-radio-group value="{{radio}}" bind:change="onChange" class="radioBox">
+      <van-radio name="1" checked-color="#8EB85C">是</van-radio>
+      <van-radio name="2" checked-color="#8EB85C">否</van-radio>
+    </van-radio-group>
+  </view>
+</view>
+<button class='changeBtn' bindtap='submitInfos'>添加银行卡</button>

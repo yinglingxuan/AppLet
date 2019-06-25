@@ -1,0 +1,55 @@
+<!--pages/payment/index.wxml-->
+<view>
+    <view class='payment-li'>
+        <view  class='payment-imgs'>
+            <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/weixin@2x.png'></image>
+        </view>
+        <view class='payment-text'>微信支付</view>
+        <view class='payment-icon'>
+            <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fanhui@2x.png'></image>
+        </view>
+    </view>
+    <view class='payment-li'  bindtap='passwordShon'>
+        <view  class='payment-imgs'>
+            <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/yue@2x.png'></image>
+        </view>
+        <view class='payment-text'>账户余额支付</view>
+        <view class='payment-icon'>
+            <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fanhui@2x.png'></image>
+        </view>
+    </view>
+
+
+<button bindtap='showPassword'>支付密码</button>
+
+    <!-- 弹出层 -->
+        <view class='show-body'>
+            <van-popup show="{{ show }}" bind:close="onClose">
+                <view class='show-hint'>提示</view>
+                <view class='show-text'>你还没有设置支付密码</view>
+                  <view class='show-botton'>
+                      <view class='show-cancel' bindtap='showCancel'>取消</view>
+                      <view class='show-de' bindtap='offDelete' >去设置</view>
+                </view>
+            </van-popup>
+        </view>
+        <!-- 支付密码 -->
+        <view class='show-body'>
+            <van-popup show="{{ showPassword }}" bind:close="passCancel">
+                <view class='show-hint'>支付密码</view>
+                <view class='show-input'>
+                    <block wx:for="{{Length}}" wx:key="item">
+                      <input  value="{{Value.length>=index+1?Value[index]:''}}" disabled password='{{ispassword}}' catchtap='Tap'></input>
+                    </block>
+                </view>
+                <view class='forget-pass'>忘记密码</view>
+                  <view class='show-botton'>
+                      <view class='show-cancel' bindtap='passCancel'>取消</view>
+                      <view class='show-de' bindtap='offPass' >确认</view>
+                </view>
+            </van-popup>
+        </view>
+
+       <!-- 密码真正输入的input -->
+        <input name="password" password="{{true}}" class='ipt' maxlength="{{Length}}" focus="{{isFocus}}" bindinput="Focus"></input>
+</view>

@@ -1,0 +1,74 @@
+/* pages/userCenter/changePassword/index.wxss */
+.bindTitle{
+  text-align: center;
+  font-size: 32rpx;
+  color: #999;
+  font-weight: 600;
+  height: 144rpx;
+  line-height: 144rpx;
+}
+.changeInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50rpx auto;
+}
+.changeInfoName{
+  /* position: relative; */
+  height: 80rpx;
+  width: 100%;
+  /* border-bottom: 2rpx solid #E5E5E5; */
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  line-height: 80rpx;
+  color: #666;
+  background-color: #fff;
+}
+.codeBtn{
+  color: #8EB85C;
+  width: 180rpx;
+  height: 40rpx;
+  flex:0 0 auto;
+  padding: 0;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  border-left: 1px solid #E5E5E5;
+  background-color: transparent;
+}
+/* .codeBtn::after{
+  border: none;
+} */
+.changeInfoName .listTitle{
+  flex:0 0 auto;
+  /* width: 96rpx; */
+  height: 100%;
+  font-size: 32rpx;
+  margin-right: 24rpx;
+}
+.changeInfoName input{
+  /* width: 60%; */
+  flex-grow: 1;
+  height:100%;
+}
+
+
+.changeBtn{
+  width: 90%;
+  height: 100rpx;
+  background: #CCCCCC;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 6rpx;
+  line-height: 100rpx;
+  position: absolute;
+  bottom: 20rpx;
+}
+.changeBtn::after{
+  border: none;
+}

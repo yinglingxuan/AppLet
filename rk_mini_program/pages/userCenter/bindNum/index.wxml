@@ -1,0 +1,14 @@
+<!--pages/userCenter/bindNum/index.wxml-->
+<view class='bindTitle'>请绑定手机号</view>
+<view class='changeInfo'>
+  <view class='changeInfoName'>
+    <view class='listTitle'>手机号</view>
+    <input placeholder='请输入手机号' bindinput='getPhoneValue' value='{{phone}}' />
+  </view>
+  <view class='changeInfoName'>
+    <view class='listTitle'>验证码</view>
+    <input placeholder='请输验证码' bindinput='getCodeValue' value='{{code}}' style='width:70%;' />
+    <view class='codeBtn' bindtap='getVerificationCode' disabled='{{disabled}}'>{{codename}}</view>
+  </view>
+  <button class='changeBtn' bindtap='save'>绑定</button>
+</view>

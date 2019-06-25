@@ -1,0 +1,278 @@
+/* pages/details/affirmOrder/index.wxss */
+.body{
+   background: #F6F6F6;
+}
+
+.backgrounds{
+  background: url("https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/ 16@3x.png");
+  height: 230rpx;
+  background-size: 100%;
+}
+
+
+.backgrounds .one-key-site{
+   display: flex;
+   padding-top: 30rpx;
+   margin-bottom: 65rpx;
+}
+.one-key-site .site-left{
+    display: flex;
+    width: 90%;
+    padding-left: 30rpx;
+}
+.one-key-site .site-left .site-icon image{
+   width: 40rpx;
+   height: 38rpx;
+}
+.one-key-site .site-left .site-text{
+   font-size: 30rpx;
+   padding-left: 20rpx;
+}
+
+.one-key-site  .site-imgs image{
+   width: 15rpx;
+   height: 20rpx;
+}
+
+/* 新增地址 */
+.newAdd{
+  display: flex;
+}
+.newAdd .add-text{
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  width: 90%;
+}
+.newAdd .add-imgs image{
+   width: 15rpx;
+   height: 20rpx;
+}
+
+/* 选中地址后的样式 */
+.location{
+   background: #fff;
+   padding-top: 30rpx;
+}
+.location .location-body {
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+}
+.location .location-body .location-left{
+    width: 97%;
+}
+.location .location-body .location-left .location-name{
+   font-size: 30rpx;
+   color: #000000;
+   line-height: 70rpx;
+}
+.location .location-body .location-left .location-site{
+   font-size: 30rpx;
+   color: #9E9E9E;
+   line-height: 70rpx;
+}
+.location .location-body  .location-right{
+   padding-top: 30rpx;
+}
+.location .location-body  .location-right image{
+    width: 15rpx;
+    height: 20rpx;
+}
+
+/* 商品列表 */
+.order-ul{
+  background: #fff;
+  margin-top: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 50rpx;
+}
+.order-ul .order-lis{
+    display: flex;
+}
+.order-ul .order-lis .order-left{
+    width:200rpx;
+    margin-right: 30rpx; 
+    margin-left: 20rpx;
+}
+.order-ul .order-lis .order-left image{
+   width: 150rpx;
+   height: 150rpx;
+   margin-left: 20rpx;
+}
+
+.order-ul .order-lis .order-right .order-name{
+    font-size: 30rpx;
+    padding-right: 80rpx;
+}
+.order-ul .order-lis .order-right .order-money{
+    font-size: 35rpx;
+    color: #FF5C32;
+    font-weight: 600;
+    line-height: 70rpx;
+}
+.order-ul .order-lis .order-right .order-standard{
+    display: flex;
+}
+.order-ul .order-lis .order-right .order-standard .order-selected{
+    font-size: 25rpx;
+    width: 55%;
+}
+
+.distribution{
+   background: #fff;
+   margin-top: 20rpx;
+   padding-bottom: 50rpx;
+}
+.distribution .distribution-top{
+   display: flex;
+   width: 93%;
+   margin: 0 auto;
+   border-bottom: solid 1rpx #EFEFEF;
+   padding: 30rpx 0rpx;
+   font-size: 30rpx;
+}
+.distribution .distribution-top .distribution-left{
+   width: 70%;
+}
+.distribution .distribution-top .distribution-left text{
+   color: #8EB85C;
+}
+.distribution .distribution-top .distribution-right{
+   width: 30%;
+   text-align: right;
+}
+.distribution .distribution-top .distribution-right image{
+   width: 15rpx;
+   height: 25rpx;
+}
+
+.orange{
+  color: #FF5C32;
+}
+
+/* 确认订单 */
+.pay{
+  position: fixed;
+  bottom: 0rpx;
+  background: #fff;
+  width: 100%;
+  height: 122rpx;
+}
+.pay .pay-body{
+   width: 93%;
+   margin: 0 auto;
+   display: flex;
+}
+.pay .pay-body .pay-title{
+   font-size: 30rpx;
+   margin-top: 50rpx;
+}
+.pay .pay-body .pay-price{
+   font-size: 30rpx;
+   color: #FF5C32;
+   margin-top: 50rpx;
+   margin-left: 20rpx;
+}
+.pay .pay-body .pay-bottom{
+   margin-left: 150rpx;
+   padding: 15rpx 70rpx;
+   margin-top: 30rpx;
+   border-radius: 10rpx;
+   font-size: 35rpx;
+   background: #8EB85C;
+   color: #fff;
+}
+
+
+
+/* 优惠卷的弹框 */
+.couponsHide-body{
+  height: 600rpx;
+  background: #fff;
+  width: 100%;
+}
+.couponsHide-body .couponsHide-border{
+   width: 93%;
+   margin: 0 auto;
+}
+.couponsHide-body .couponsHide-border .couponsHide-top{
+   border-bottom:solid 1rpx #F0F0F0; 
+   padding-bottom: 30rpx;
+}
+.couponsHide-body .couponsHide-border .couponsHide-top .couponsHide-hide{
+   position: relative;
+   left: 95%;
+   padding-top: 10rpx;
+   color: #CCCCCC;
+}
+.couponsHide-body .couponsHide-title{
+    width: 100rpx;
+    font-size: 30rpx;
+    text-align: center;
+    margin: 0 auto;
+    color: #6F6A6A;
+    margin-top: -20rpx;
+    background: #fff;
+}
+
+.couponsHide-uls{
+    width: 93%;
+    margin: 0 auto;
+}
+
+/* 优惠卷滚动列表 */
+.scroll-header{
+  height: 470rpx;
+  white-space: nowrap; /*这个很重要，*/
+}
+/* 优惠卷列表的样式 */
+.scroll-header .lists{
+    width: 100%;
+    display: flex;
+    padding: 45rpx 0;
+    margin: 30rpx 0;
+}
+.background-url{
+    background:url('https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/yiling01.png') no-repeat;
+    background-size: 100%;
+}
+.background-url-one{
+    background:url('https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/124562.png') no-repeat;
+    background-size: 100%;
+}
+.scroll-header .lists .left{
+   width: 220rpx;
+   font-size: 25rpx;
+   text-align: center;
+   color: #8EB85C;
+}
+.scroll-header .lists .left text{
+   font-size: 40rpx;
+   font-weight: 600;
+}
+.scroll-header .lists .centre{
+    width: 45%;
+    font-size: 22rpx;
+    text-align: center;
+    line-height: 50rpx;
+    color: #666666;
+}
+.scroll-header .lists .centre text{
+    background: #E5F5D3;
+    border-radius: 40rpx;
+    padding: 5rpx 10rpx;
+    color: #8EB85C;
+}
+
+.scroll-header .lists .right{
+    padding: 20rpx 0rpx;
+    padding-left: 80rpx;
+}
+
+
+/* 去掉默认滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

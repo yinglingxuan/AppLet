@@ -1,0 +1,14 @@
+<!--pages/myReferrer /index.wxml-->
+<view style='padding-top:10rpx; '>
+    <view class='referrer-ul'>
+        <view class='referrer-lis'>
+            <view class='referrer-imgs'>
+                <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'> </image>
+            </view>
+            <view class='referrer-text'>
+                <view class='name'>小小猪猪</view>
+                <view class='date'>邀请时间：2019.04.10 16.52.09</view>
+            </view>
+        </view>
+    </view>
+</view>

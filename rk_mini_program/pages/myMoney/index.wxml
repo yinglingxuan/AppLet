@@ -1,0 +1,69 @@
+<!--pages/myMoney /index.wxml-->
+<view>
+    <view class='money-top'>
+        <view class='money-body'>
+            <view class='money-title'>当前余额</view>
+            <view class='money-count'>180.00</view>
+        </view>
+        <view class='tab-lis'>
+            <view><text bindtap='onTable' data-id='1' class="{{tables=='1'?'border-f':''}}">可提现</text></view>
+            <view><text bindtap='onTable' data-id='2' class="{{tables=='2'?'border-f':''}}">待结算</text></view>
+            <view><text bindtap='onTable' data-id='3' class="{{tables=='3'?'border-f':''}}">提现记录</text></view>
+            <view><text bindtap='onTable' data-id='4' class="{{tables=='4'?'border-f':''}}">充值记录</text></view>
+        </view>
+    </view>
+    <!-- 可提现的 -->
+    <view class='data-ul' wx:if="{{tables==1}}">
+        <view class='data-lis'>
+            <view class='data-left'>2019-05-06 09:21:03</view>
+            <view class='data-right'>+0.08</view>
+        </view>
+
+        <view class='data-lis'>
+            <view class='data-left'>2019-05-06 09:21:03</view>
+            <view class='data-right'>+0.08</view>
+        </view>
+
+        <view class='button-lis'>
+            <view class='button-voucher' bindtap='onUp'>充值</view>
+            <view class='button-withdraw' bindtap='onDeposit'>提现</view>
+        </view>
+    </view>
+
+    <!-- 待结算的 -->
+    <view class='data-ul'  wx:if="{{tables==2}}">
+        <view class='data-lis'>
+            <view class='data-left'>2019-05-06 09:21:03</view>
+            <view class='data-right'>+0.08</view>
+        </view>
+
+        <view class='data-lis'>
+            <view class='data-left'>2019-05-06 09:21:03</view>
+            <view class='data-right'>+0.08</view>
+        </view>
+    </view>
+    <!-- 提现记录 -->
+    <view class='data-ul'  wx:if="{{tables==3}}">
+        <view class='data-lis'>
+            <view class='data-left'>2019-05-06 09:21:03</view>
+            <view class='data-right'>-0.08</view>
+        </view>
+
+        <view class='data-lis'>
+            <view class='data-left'>2019-05-06 09:21:03</view>
+            <view class='data-right'>-0.08</view>
+        </view>
+    </view>
+    <!-- 充值记录 -->
+    <view class='data-ul'  wx:if="{{tables==4}}">
+        <view class='data-lis'>
+            <view class='data-left'>2019-05-06 09:21:03</view>
+            <view class='data-right'>+0.08</view>
+        </view>
+
+        <view class='data-lis'>
+            <view class='data-left'>2019-05-06 09:21:03</view>
+            <view class='data-right'>+0.08</view>
+        </view>
+    </view>
+</view>

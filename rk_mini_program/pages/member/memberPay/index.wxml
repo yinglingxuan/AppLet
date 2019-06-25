@@ -1,0 +1,21 @@
+<!--pages/member/memberPay/index.wxml-->
+<view style="height:{{winHeight}}px;background:url({{backgroundUrl[ids]}}) no-repeat; background-size: 100%;">
+    <view class='pay-top'>
+        <view class='pay-imgs'>
+          <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+        </view>
+        <view class='pay-name'>
+            <view> 遇见最好的自己</view>
+            <view><image src="{{imgsUrl[ids]}}"></image></view>
+        </view>
+    </view>
+
+    <view class='pay-body'>
+        <view class='pay-ul'>
+            <view class='body-imgs'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/031@2x.png'></image>
+            </view>
+          <view class='body-text'>请扫描二维码进行支付</view>
+        </view>
+    </view>
+</view>

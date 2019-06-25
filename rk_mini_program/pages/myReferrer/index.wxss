@@ -1,0 +1,30 @@
+/* pages/myReferrer /index.wxss */
+
+.referrer-ul{
+   width: 92%;
+   margin: 0 auto;
+}
+.referrer-ul .referrer-lis{
+   display: flex;
+    padding: 30rpx 20rpx;
+    border-radius: 20rpx;
+    background: #fff;
+    margin-top: 20rpx;
+}
+.referrer-ul .referrer-lis .referrer-imgs{
+  width: 100rpx;
+}
+.referrer-ul .referrer-lis .referrer-imgs image{
+   width: 78rpx;
+   height: 78rpx;
+   border-radius: 50%;
+}
+.referrer-ul .referrer-lis .referrer-text .name{
+   font-size: 32rpx;
+   color: #333333;
+}
+.referrer-ul .referrer-lis .referrer-text .date{
+   font-size: 26rpx;
+   color: #666666;
+   line-height: 50rpx;
+}

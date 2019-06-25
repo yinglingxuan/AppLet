@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "提现金额",
+  "usingComponents": {
+    "van-icon": "/dist/icon/index"
+  }
+}

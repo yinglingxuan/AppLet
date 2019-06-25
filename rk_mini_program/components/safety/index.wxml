@@ -1,0 +1,30 @@
+<!--components/safety /index.wxml-->
+<view>
+    <!-- 福利模块 -->
+        <view class='welfare'>
+            <view class='uls'>
+                <view class='lis-imgs'>
+                    <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/anquan@2x.png'></image>
+                </view>
+                <view class='lis-texts'>正品保障</view>
+            </view>
+            <view class='uls'>
+                <view class='lis-imgs'>
+                  <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/anquan@2x.png'></image>
+                </view>
+                <view class='lis-texts'>全场包邮</view>
+            </view>
+            <view class='uls'>
+                <view class='lis-imgs'>
+                    <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/anquan@2x.png'></image>
+                </view>
+                <view class='lis-texts'>买贵必赔</view>
+            </view>
+            <view class='uls'>
+                <view class='lis-imgs'>
+                    <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/anquan@2x.png'></image>
+                </view>
+                <view class='lis-texts'>七天无理由</view>
+            </view>
+        </view>
+</view>

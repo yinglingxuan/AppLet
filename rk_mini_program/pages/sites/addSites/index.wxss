@@ -1,0 +1,77 @@
+/* pages/sites/addSites/index.wxss */
+.addSites-body{
+   width: 93%;
+   margin: 0 auto;
+}
+.addSites-body .input-list{
+  display: flex;
+  border-bottom: solid 1rpx #EEEEEE;
+  font-size: 30rpx;
+}
+.addSites-body .input-list .paste{
+   width: 80%;
+   height: 140rpx;
+}
+.addSites-body .input-list .paste textarea{
+  padding: 20rpx 0rpx;
+}
+.addSites-body .input-list .discern{
+  text-align: center;
+  height: 40rpx;
+  padding: 5rpx 15rpx;
+  background: #CCCCCC;
+  color: #fff;
+  border-radius: 5rpx;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+
+.input-list .left{
+   margin: 40rpx 0rpx;
+   width: 25%;
+}
+
+.input-list .left text{
+   color: #FF0000;
+}
+.input-list .right{
+    width: 75%;
+}
+.input-list .right input{
+   text-align: right;
+   margin: 40rpx 0rpx;
+}
+.input-list .rightOne{
+    margin: 40rpx 0rpx;
+    width: 75%;
+    display: flex;
+}
+.input-list .rightOne-text{
+   width: 92%;
+   text-align: right;
+   color: #808080;
+}
+.input-list .rightOne-imgs image{
+   width: 15rpx;
+   height: 20rpx;
+   margin-left: 10rpx;
+}
+
+.right-checked{
+  margin: 30rpx 0rpx;
+  margin-left: 63%;
+}
+
+
+.add-button{
+   position: fixed;
+   left: 3%;
+   right: 3%;
+   bottom: 10rpx;
+   text-align: center;
+   border-radius: 10rpx;
+   background: #8EB85C;
+   color: #fff;
+   padding: 15rpx 0;
+}

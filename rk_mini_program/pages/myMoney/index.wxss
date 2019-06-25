@@ -1,0 +1,102 @@
+/* pages/myMoney /index.wxss */
+.money-top{
+   height: 500rpx;
+   /* background: #9BD05B; */
+   background: linear-gradient(#BCE48B, #9BD05B);
+}
+.money-top .money-body{
+  text-align: center;
+  width: 300rpx;
+  margin: 0 auto;
+  padding-top: 130rpx;
+  padding-bottom: 70rpx;
+}
+.money-top .money-body .money-title{
+   font-size: 36rpx;
+   color: #FFFFFF;
+}
+.money-top .money-body .money-count {
+   font-size: 70rpx;
+   color: #FFFFFF;
+   margin-top: 20rpx;
+}
+
+.tab-lis{
+   display:  flex;
+   color: #fff;
+   font-size: 32rpx;
+   width: 94%;
+   margin: 0 auto;
+}
+.tab-lis view{
+   width: 25%;
+   text-align: center;
+}
+.tab-lis view text{
+   line-height: 70rpx;
+   padding: 10rpx 0;
+}
+.border-f{
+  border-bottom: solid 5rpx #fff;
+}
+
+/* 数据的显示 */
+.data-ul{
+    width: 100%;
+    background: #fff;
+    border-radius: 30rpx 30rpx 0 0;
+    margin-top: -30rpx;
+    height: 750rpx;
+    padding-top: 20rpx;
+    margin-bottom: 130rpx;
+}
+.data-ul .data-lis{
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   padding: 20rpx 0;
+   border-bottom: solid 1rpx #F0F0F0;
+}
+.data-ul .data-lis .data-left{
+   font-size: 28rpx;
+   color: #000000;
+   width: 50%;
+   line-height: 65rpx;
+}
+.data-ul .data-lis .data-right{
+   font-size: 44rpx;
+   color: #8EB85C;
+   width: 50%;
+   text-align: right;
+}
+
+/* //充值和提现按钮 */
+
+.button-lis{
+  width: 100%;
+  padding:20rpx 0;
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom:20rpx; 
+  position: fixed;
+  bottom: 0rpx;
+}
+
+
+.button-lis view{
+  width: 45%;
+  text-align: center;
+  margin: 0 20rpx;
+  font-size: 36rpx;
+  padding: 20rpx 0;
+  border-radius: 40rpx;
+  color: #fff;
+}
+
+.button-lis .button-voucher{
+   background: #333333;
+}
+.button-lis .button-withdraw{
+   background: #8EB85C;
+}

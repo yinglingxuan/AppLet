@@ -1,0 +1,71 @@
+<!--pages/myMoney/withdrawDeposit /index.wxml-->
+<view>
+    <view class='with-body'>
+        <view class='with-uls'>
+            <view class='with-bank'>提现到银行卡</view>
+            <view class='with-lis'>
+                <view class='lis-left'>银行卡：</view>
+                <view class='list-right'>请点击选择银行卡</view>
+                <view class='list-icon'><van-icon name="arrow" /></view>
+            </view>
+
+
+            <view class='with-lis'>
+                <view class='lis-left'>银行卡账号：</view>
+                <view class='list-right'>
+                  <input type='text' value='{{bankId}}' bindinput='bankId'></input>
+                </view>
+            </view>
+
+            <view class='with-lis'>
+                <view class='lis-left'>开户姓名：</view>
+                <view class='list-right'>
+                  <input type='text' value='{{bankName}}' bindinput='bankName'></input>
+                </view>
+            </view>
+
+            <view class='sum'>
+                <view class='sum-body'>
+                    <view class='sum-title'>提现金额</view>
+                    <view class='sum-input'><input type="text" value='{{bankMoney}}' bindinput='bankMoney'></input></view>
+                    <view class='sum-icon'><van-icon name="arrow"/></view>
+                </view>
+                <view class='sum-procedure'>
+                  提现手续费为:{{procedure}}元
+                </view>
+                <view class='sum-hint'>提现金额必须是100的倍数的整数</view>
+            </view>
+
+            <view class='balance'>
+                <view class='balance-body'>
+                    <view class='balance-lis'>
+                        <view class='a'>账户当前金额：</view>
+                        <view class='text-right a'>¥0.00</view>
+                    </view>
+                    <view class='balance-lis'>
+                        <view class='a'>
+                          <view >账户当前金额：</view>
+                          <view class='sum-hint'>（含手续费2%）</view>
+                        </view>
+                        <view class='text-right a'>¥0.00</view>
+                    </view>
+                </view>
+                <view class='sum-hint'>注:提现金额不能大于当前账户金额</view>
+            </view>
+
+
+            <view class='payment-lis'>
+                <view class='payment-left'>支付密码：</view>
+                <view class='payment-right'>
+                  <input type='password' value='{{paymentCode}}' bindinput='paymentCode' placeholder='请输入支付密码'></input>
+                </view>
+                 <view class='payment-icon'><van-icon name="arrow" /></view>
+            </view>
+
+
+            <view class='withdraw' bindtap='withdraw'>提现</view>
+        </view>
+
+
+    </view>
+</view>

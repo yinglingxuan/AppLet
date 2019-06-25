@@ -1,0 +1,71 @@
+<!--pages/details/comment/index.wxml-->
+<view class='bodys'>
+    <view class='comment-ul'>
+        <view class='comment-lis'>
+            <view class='comment-top'>
+                <view class='comment-head'>
+                    <image src='{{demoData.headPortrait}}'></image>
+                </view>
+                <view class='comment-message'>
+                    <view class='comment-name'>{{demoData.name}}</view>
+                    <view class='comment-date'>{{demoData.dates}}</view>
+                </view>
+            </view>
+            <view class='comment-text'>{{demoData.text}}</view>
+            <view class='comment-imgs'>
+                <view class='comment-foms' wx:for='{{demoData.imgs}}'>
+                    <image src='{{item}}' style='width:{{demoData.imgs.length==1?(winWhidth-40)/2:((winWhidth-40)-(demoData.imgs.length*20))/demoData.imgs.length}}px;height:{{demoData.imgs.length==1?(winWhidth-40)/2:((winWhidth-40)-(demoData.imgs.length*20))/demoData.imgs.length}}px;'> </image>
+                </view>
+            </view>
+
+
+
+            
+        </view>
+
+        <view class='comment-lis'>
+            <view class='comment-top'>
+                <view class='comment-head'>
+                    <image src='{{demoData.headPortrait}}'></image>
+                </view>
+                <view class='comment-message'>
+                    <view class='comment-name'>{{demoData.name}}</view>
+                    <view class='comment-date'>{{demoData.dates}}</view>
+                </view>
+            </view>
+            <view class='comment-text'>{{demoData.text}}</view>
+            <view class='comment-imgs'>
+                <view class='comment-foms' wx:for='{{demoData.imgs}}'>
+                    <image src='{{item}}' style='width:{{demoData.imgs.length==1?(winWhidth-40)/2:((winWhidth-40)-(demoData.imgs.length*20))/demoData.imgs.length}}px;height:{{demoData.imgs.length==1?(winWhidth-40)/2:((winWhidth-40)-(demoData.imgs.length*20))/demoData.imgs.length}}px;'> </image>
+                </view>
+            </view>
+        </view>
+    </view>
+
+<!-- 购物车 -->
+      <view class='shopping-trolley'>
+          <view class='shopping-boty'>
+              <view class='collect'>
+                  <view class='collect-inco'>
+                      <image src='../../../imgs/收藏@2x.png'></image>
+                  </view>
+                  <view class='collect-name'>收藏</view>
+              </view>
+              <view class='shopping'>
+                  <view class='shopping-inco'>
+                       <image src='../../../imgs/分组 13 copy@2x.png'></image>
+                  </view>
+                  <view class='count'>5</view>
+                  <view class='shopping-name'>购物车</view>
+              </view>
+
+              <view class='shopping-add'>
+                    <button >加入购物车</button>
+              </view>
+              <view class='buy'>
+                    <button >立即购买</button>
+              </view>
+          </view>
+      </view>
+</view>
+

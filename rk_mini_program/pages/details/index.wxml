@@ -1,0 +1,193 @@
+<!--pages/details/index.wxml-->
+<view style='background:#fff;'>
+      <!-- 轮播图模块 -->
+      <view class='carousel'>
+          <swiper style='height:700rpx;' bindchange='intervalChange'>
+              <block wx:for="{{background}}" wx:key="*this">
+                <swiper-item>
+                    <image class='imgs' src='{{item}}'  data-index='{{index}}' bindtap='previewImg'></image>
+                </swiper-item>
+              </block>
+          </swiper>
+          <view class='page'> {{page}}/{{background.length}}</view>
+      </view>
+
+      <view class='details'>
+          <view class='details-price '>
+              <view class='details-newPrice'><text class='icons'>￥</text>58.9 <text class='deprice'>￥58.9</text></view>
+          </view>
+          <view class='details-name'>
+              韩国JMsolution深水炸弹面膜10片 水谷光急救针剂 破尿酸面膜
+          </view>
+          <view class='details-sales'>
+              销量1118
+          </view>
+      </view>
+      <view>
+          <safety></safety>
+      </view>
+      <!-- 优惠卷 -->
+      <view class='discounts'>
+          <view class='discounts-body'>
+              <view class='discounts-width' data-statu="shon" bindtap='couponsHide'>
+                <view class='discounts-title'>优惠：</view>
+                <view class='discounts-name'>康康卷</view>
+                <view class='discounts-details'>满500减50</view>
+                <view class='discounts-get'>领劵</view>
+              </view>
+              
+              <view class='discounts-icon'>
+                  <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fanhui@2x.png'></image>
+              </view>
+          </view>
+      </view>
+      <!-- 点击选中规格 -->
+      <view class='select'>
+          <view class='select-body'>
+              <view class='select-width'  bindtap='shoppingList' data-statu="shon">
+                <view class='select-choice'>请选择:</view>
+                <view class='select-rule'>规格</view>
+              </view>
+              <view class='select-icon'>
+                  <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fanhui@2x.png'></image>
+              </view>
+          </view>
+      </view>
+      <!-- 图文详情 -->
+      <view class='particulars-imgs'>
+          <view class='particulars-title'>图文详情</view>
+          <view wx:for='{{background}}'>
+              <image src='{{item}}'></image>
+          </view>
+      </view>
+      <!-- 评论专区 -->
+      <view class='comment-bottom'>
+            <view class='comment'>
+                <view class='comment-title'>
+                    <view class='comment-boty'>
+                        <view class='count'>商品评论 2</view>
+                        <view class='all' bindtap='allComment'>查看全部</view>
+                    </view>
+                    <view class='comment-imgs'>
+                        <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fanhui@2x.png'></image>
+                    </view>
+                </view>
+
+                <view class='message'>
+                  <view class='message-list'>
+                        <view class='message-portrait'>
+                            <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+                        </view>
+                        <view class='message-body'>
+                            <view class='message-name'>
+                                嘟嘟宝贝
+                            </view>
+                            <view class='message-text'>
+                              韩国JMsolution深水炸弹面膜10片 水谷光急救针剂破尿酸面 膜，韩国JMsolution深水炸弹面膜10片 水谷光急救针剂…
+                            </view>
+                        </view>
+                  </view>
+                </view>
+            </view>
+      </view>
+
+      <!-- 购物车 -->
+      <view class='shopping-trolley'>
+          <view class='shopping-boty'>
+              <view class='collect'>
+                  <view class='collect-inco'>
+                      <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/shoucang@2x.png'></image>
+                  </view>
+                  <view class='collect-name'>收藏</view>
+              </view>
+              <view class='shopping' bindtap='onShopping'>
+                  <view class='shopping-inco'>
+                       <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/sss@2x.png'></image>
+                  </view>
+                  <view class='count'>5</view>
+                  <view class='shopping-name'>购物车</view>
+              </view>
+
+              <view class='shopping-add'>
+                    <button >加入购物车</button>
+              </view>
+              <view class='buy'>
+                    <button >立即购买</button>
+              </view>
+          </view>
+      </view>
+
+    <!-- 分享功能和回到顶部功能 -->
+     <button class='share' open-type="share">
+            <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fenxinag@2x(2).png'></image>
+     </button>
+     <view class='roof' bindtap='goTop' wx:if='{{goTop}}'>
+        <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/dingbu@2x.png'></image>
+     </view>
+
+      <!-- 商品选择列表 -->
+      <view>
+          <van-popup show="{{ showModalStatus }}" custom-style="background:rgba(250, 250, 250, 0);" bind:close="showModalStatus"  position="bottom">
+                <view class='show-details'>
+                     <view class='details-body'>
+                        <view class='details-top'>
+                            <view class='imgs'>
+                                <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+                            </view>
+                            <view class='top-right'>
+                                <view class='top-price'><text>￥</text>180</view>
+                                <view class='top-inventory'>库存6666件</view>
+                                <view class='top-selected'>已选：{{demoData[specification]}}</view>
+                            </view>
+                            <view class='top-hide' data-statu="hide" bindtap='shoppingList'>
+                                <van-icon name="cross" />
+                            </view>  
+                        </view>
+                        <view class='specification'>
+                            <view class='specification-name'>规格:</view>
+                            <view class='specification-list'>
+                                <view wx:for='{{demoData}}' class="{{specification==index?'newLists':'lists'}}" bindtap='specification' data-index="{{index}}">{{item}}</view>
+                            </view>
+                        </view>
+
+                        <view class='quantity'>
+                            <view class='quantity-body'>
+                                <view class='left'>购买数量：</view>
+                                <view class='right'>
+                                    <van-stepper input-width='200rpx;'  value="{{ count }}" integer min="1"  max="99" step="1" bind:change="onChange"></van-stepper>
+                                </view>
+                            </view>
+                        </view>
+                        <view class='bottoms'>
+                            <view class='bottoms-add'>
+                                <button>加入购物车</button>
+                            </view>
+                            <view class='bottoms-affirm'>
+                                <button bindtap='affirmOrder'>确认</button>
+                            </view>
+                        </view>
+                    </view>
+                    
+                </view>
+          </van-popup>
+      </view>
+
+
+
+      <!-- <view class='shopping-details' animation="{{animationDatas}}" wx:if="{{showModalStatus}}">
+          <view class='hides' data-statu="hide" bindtap='shoppingList'></view>
+      </view> -->
+      <!-- 商品优惠卷 -->
+<!-- 弹出层 -->
+        <view class='show-body'>
+            <van-popup show="{{ couponsHide }}" bind:close="onClose"  position="bottom">
+                <view><coupons  bind:myevent="toggleToast"></coupons></view>
+            </van-popup>
+        </view>
+
+      <!-- <view class='shopping-details' animation="{{animationDatas}}" wx:if="{{couponsHide}}">
+            <view class='hides' data-statu="hide" bindtap='couponsHide'></view>
+
+            
+      </view> -->
+</view>

@@ -1,0 +1,29 @@
+/* pages/userCenter/relieveBind/index.wxss */
+.cardList{
+  box-sizing: border-box;
+  padding: 20rpx 0;
+}
+.cardItem{
+  width: 90%;
+  height: 74rpx;
+  line-height: 74rpx;
+  border-radius: 8rpx;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-left: 12rpx;
+  color: #333333;
+  font-size: 28rpx;
+}
+.changeBtn{
+  width: 90%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 20rpx;
+  margin: 0 auto;
+  background-color: #8EB85C;
+  color: #fff;
+}
+.changeBtn::after{
+  border:none;
+}

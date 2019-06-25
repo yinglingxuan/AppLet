@@ -1,0 +1,58 @@
+<!--pages/search/index.wxml-->
+<view style='background:#fff;height:{{winHeight}}px;'>
+    <view class='searchs-heads'>
+        <view class='searchs'>
+            <view class='searchs-imgs'>
+              <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/shousuo@2x.png'></image>
+            </view>
+            <view class='searchs-input'>
+                <input type='text' placeholder='搜索瑞康商品' bindinput="bindKeyInput" value='{{inputValue}}'></input>
+            </view>
+            <view class='searchs-submit' bindtap='submits'>搜索</view>
+        </view>
+    </view>
+    <view class='searchs-body'>
+        <view class='searchs-title'>热门搜索</view>
+        <view class='searchs-ul'>
+            <view class='searchs-li'>
+                <view class='hot'>
+                    <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/huo@2x.png'></image>
+                </view>
+                <view>热门搜索</view>
+            </view>
+            <view class='searchs-li'>
+                <view class='hot'>
+                        <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/huo@2x.png'></image>
+                </view>
+                <view>面膜</view>
+            </view>
+             <view class='searchs-li'>
+                <view>晒后修复</view>
+            </view>
+             <view class='searchs-li'>
+                <view>血压</view>
+            </view>
+             <view class='searchs-li'>
+                <view>血压</view>
+            </view>
+            <view class='searchs-li'>
+                <view>血压</view>
+            </view>
+            <view class='searchs-li'>
+                <view>血压</view>
+            </view>
+        </view>
+
+        <view class='history'>
+            <view class='titles'>历史搜索</view>
+            <view class='icon-delete' bindtap='dataDelete'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/shanchu@2x.png'></image>
+            </view>
+        </view>
+        <view class='searchs-ul'>
+            <view class='searchs-li' wx:for='{{historyData.length}}'>
+                <view>{{historyData[historyData.length-(index+1)]}}</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,79 @@
+<!--pages/member/index.wxml-->
+<view>
+    <view style='background:#fff; padding-bottom:200rpx;'>
+        <view class='member-background'>
+          <view class='member-top'>
+                <view class='top-imgs'>
+                    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+                </view>
+                <view class='top-title'>
+                    <view class='top-name'>遇见最好的自己</view>
+                    <view class='title-imgs'>
+                        <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/zuansi@2x.png'></image>
+                    </view>
+                </view>
+          </view> 
+        </view>
+        <view class='card'>
+            <view class='community-imgsBody'>
+                <swiper  class="swiper-block"  previous-margin="40rpx" next-margin="60rpx" current="0" bindchange="swiperChange">
+                    <block wx:for="{{imgs}}" wx:index="{{index}}">
+                        <swiper-item class="swiper-item">
+                            <view class="swiper-body" style="background: url({{item}}) no-repeat;background-size: 100%;">
+                                <view class="member-name" style="{{index=='3'?'color: #E3AE67;':''}}">{{demoData[index].name}} <text class='{{colors[index]}}'>{{demoData[index].edition}}</text></view>
+                                <view class='member-money' style="{{index=='3'?'color: #E3AE67;':''}}"><text>￥</text>{{demoData[index].money}}</view>
+                            </view>
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>
+        </view>
+
+        <view class='member-body'>
+            <view class='body-title'>{{demoData[swiperIndex].name}}权益</view>
+            <view class='body-ul' style="{{swiperIndex=='0'?'height:352rpx;':''}}">
+                <view class='body-lis' wx:for='{{demoData[swiperIndex].equity}}' bindtap="{{item.name=='推广二维码'?'generalize':''}}">
+                      <view class='lis-imgs'><image src='{{item.imgs}}'></image> </view>
+                      <view class='lis-name'>{{item.name}}</view>
+                </view>
+            </view>
+
+            <view class='gift-bag'>
+                <view class='bag'>合伙人礼包</view>
+                <view class='pay'>立即支付</view>
+            </view>
+
+            <view class='explains'>
+              <view>瑞康合伙人暂不支持线上升级，若有疑问请联系客服 </view>
+              <view>客服电话：223478 </view>  
+            </view>
+
+            <view class='body-title'>权益说明</view>
+
+            <view class='explains'>
+                <view wx:for='{{demoData[swiperIndex].explain}}'>{{item}}</view>
+            </view>
+            <view class='body-title'>活动</view>
+        </view>
+    </view>
+    <view class='activity-bodys'>
+        <swiper  class="activity-swiper-block"  previous-margin="40rpx" next-margin="40rpx" current="0" bindchange="activityChange">
+            <block wx:for="{{4}}" wx:index="{{index}}">
+                <swiper-item class="activity-swiper-item">
+                    <view class='activity-ul'>
+                        <view class='activity-imgs'> 
+                          <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+                        </view>
+                        <view class='activity-name'>
+                            瑞康第43期线下体验训练营
+                        </view>
+                        <view class='activity-bottom'>
+                            <view class='bottom-left'>2019.5.12 08:00-2019.5.13 18.00</view>
+                            <view class='bottom-right'>进行中</view>
+                        </view>
+                    </view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+</view>

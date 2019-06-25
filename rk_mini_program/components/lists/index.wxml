@@ -1,0 +1,75 @@
+<!--components/lists/index.wxml-->
+<view>
+    <view class='uls'>
+        <view class='lis' bindtap='particulars'>
+            <view class='lis-imgs'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/12@2x.png'></image>
+            </view>
+            <view class='list-name'>【瑞康优选】 意大利牙膏-洁净去污防蛀牙口腔护理</view>
+            <view class='money'>￥398</view>
+            <view class='bommots'>
+                <view class='left'>￥488</view>
+                <view class='right'>132人付款</view>
+            </view>
+        </view>
+        <view class='lis' bindtap='particulars'>
+            <view class='lis-imgs'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/12@2x.png'></image>
+            </view>
+            <view class='list-name'>【瑞康优选】 意大利牙膏-洁净去污防蛀牙口腔护理</view>
+            <view class='money'>￥398</view>
+             <view class='bommots'>
+                <view class='left'>￥488</view>
+                <view class='right'>132人付款</view>
+            </view>
+        </view>
+         <view class='lis' bindtap='particulars'>
+            <view class='lis-imgs'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/12@2x.png'></image>
+            </view>
+            <view class='list-name'>【瑞康优选】 意大利牙膏-洁净去污防蛀牙口腔护理</view>
+            <view class='money'>￥398</view>
+             <view class='bommots'>
+                <view class='left'>￥488</view>
+                <view class='right'>132人付款</view>
+            </view>
+        </view>
+
+        <view class='lis' bindtap='particulars'>
+            <view class='lis-imgs'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/12@2x.png'></image>
+            </view>
+            <view class='list-name'>【瑞康优选】 意大利牙膏-洁净去污防蛀牙口腔护理</view>
+            <view class='money'>￥398</view>
+             <view class='bommots'>
+                <view class='left'>￥488</view>
+                <view class='right'>132人付款</view>
+            </view>
+        </view>
+
+        <view class='lis' bindtap='particulars'>
+            <view class='lis-imgs'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/12@2x.png'></image>
+            </view>
+            <view class='list-name'>【瑞康优选】 意大利牙膏-洁净去污防蛀牙口腔护理</view>
+            <view class='money'>￥398</view>
+             <view class='bommots'>
+                <view class='left'>￥488</view>
+                <view class='right'>132人付款</view>
+            </view>
+        </view>
+
+        <view class='lis' bindtap='particulars'>
+            <view class='lis-imgs'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/12@2x.png'></image>
+            </view>
+            <view class='list-name'>【瑞康优选】 意大利牙膏-洁净去污防蛀牙口腔护理</view>
+            <view class='money'>￥398</view>
+             <view class='bommots'>
+                <view class='left'>￥488</view>
+                <view class='right'>132人付款</view>
+            </view>
+        </view>
+    </view>
+    
+</view>

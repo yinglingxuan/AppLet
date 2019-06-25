@@ -1,0 +1,57 @@
+<!--pages/myMoney/accountMoney/index.wxml-->
+<view>
+    <view class='account-top'>
+        <view class='top-title'>可提现金额</view>
+        <view class='top-money'>1000000.00</view>
+        <view class='top-button'><text bindtap='onDeposit'>提现</text></view>
+    </view>
+
+    <view class='account-ul'>
+        <view class='data-lis'>
+            <view class='data-left'>
+              <view>每日登陆奖励</view>
+              <view class='data-date'>2019-05-06 09:21:03</view>
+            </view>
+            <view class='data-right'>+0.08</view>
+        </view>
+        <view class='data-lis'>
+            <view class='data-left'>
+              <view>每日登陆奖励</view>
+              <view class='data-date'>2019-05-06 09:21:03</view>
+            </view>
+            <view class='data-right'>+0.08</view>
+        </view>
+        <view class='data-lis'>
+            <view class='data-left'>
+              <view>每日登陆奖励</view>
+              <view class='data-date'>2019-05-06 09:21:03</view>
+            </view>
+            <view class='data-right'>+0.08</view>
+        </view>
+        <view class='data-lis'>
+            <view class='data-left'>
+              <view>每日登陆奖励</view>
+              <view class='data-date'>2019-05-06 09:21:03</view>
+            </view>
+            <view class='data-right'>+0.08</view>
+        </view>
+        <view class='data-lis'>
+            <view class='data-left'>
+              <view>每日登陆奖励</view>
+              <view class='data-date'>2019-05-06 09:21:03</view>
+            </view>
+            <view class='data-right'>+0.08</view>
+        </view>
+        <view class='data-lis'>
+            <view class='data-left'>
+              <view>每日登陆奖励</view>
+              <view class='data-date'>2019-05-06 09:21:03</view>
+            </view>
+            <view class='data-right'>+0.08</view>
+        </view>
+        
+    </view>
+    <view class='integral'>
+        <view class='integral-null'>暂无积分记录</view>
+    </view>
+</view>

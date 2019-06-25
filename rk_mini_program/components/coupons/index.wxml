@@ -1,0 +1,43 @@
+<!--components/coupons/index.wxml-->
+<view>
+    <view class='couponsHide-body'> 
+        <view class='couponsHide-border'>
+            <view class='couponsHide-top'>
+                <view class='couponsHide-hide'    data-statu="hide" bindtap='couponsHide'><van-icon name="cross" size="20px"/></view>
+            </view>
+        </view>
+        <view class='couponsHide-title'>优惠卷</view>
+
+        <view class='couponsHide-uls'>
+            <scroll-view scroll-y class='class="scroll-header"'>
+                <view class='lists background-url' >
+                    <view class='left'>
+                        ￥<text>5</text>
+                        <view>满168使用</view>
+                    </view>
+                    <view class='centre'>
+                        <view><text>康康券</text>全场商品可用</view>
+                        <view>05月31日 00:00 过期</view>
+                    </view>
+                    <view class='right'>
+                        <view class='use'>立即使用</view>
+                    </view>
+                </view>
+
+                <view class='lists background-url-one'>
+                    <view class='left'>
+                        ￥<text>5</text>
+                        <view>满168使用</view>
+                    </view>
+                    <view class='centre'>
+                        <view><text>康康券</text>全场商品可用</view>
+                        <view>05月31日 00:00 过期</view>
+                    </view>
+                    <view class='right'>
+                        <view class='get'>立即领取</view>
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+    </view>
+</view>

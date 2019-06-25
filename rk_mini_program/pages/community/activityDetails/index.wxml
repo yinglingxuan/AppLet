@@ -1,0 +1,112 @@
+<!--pages/community/activityDetails/index.wxml-->
+<view>
+    <view class='title-imgs'>
+        <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+    </view>
+
+    <view class='activity-body'>
+        <view class='activity-content'>
+            <view>瑞康第43期线下体验体验营 </view>
+            <view>-深圳站</view>
+        </view>
+        <view class='activity-text'>
+            语雀是一款优雅高效的在线文档编辑与协同工具， 让每个企业轻松拥有文档中心阿里巴巴集团内部使用多年，众多中小企业首选。语雀是对
+        </view>
+        <view class='activity-lecture'>
+            演讲嘉宾
+        </view>
+        <view class='lecture-imgs'>
+            <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+        </view>
+
+        <view class='activity-text'>
+            语雀是一款优雅高效的在线文档编辑与协同工具， 让每个企业轻松拥有文档中心阿里巴巴集团内部使用多年，众多中小企业首选。语雀是对
+        </view>
+
+
+        <view class='date-body'>
+            <view class='body-list'>
+                <view class='date-icon'>
+                    <van-icon name="clock" color="#8EB85C" />
+                </view>
+                <view class='date-lis'>
+                    <view class='lis-title'>活动时间</view>
+                    <view class='lis-date'>2018年7月28日-星期六</view>
+                    <view class='lis-sign'>签到时间：13:00-14:00</view>
+                    <view class='lis-official'>正式活动：14:00-16:00</view>
+                </view>
+            </view>
+
+
+            <view class='body-list'>
+                <view class='date-icon'>
+                    <van-icon name="clock" color="#8EB85C" />
+                </view>
+                <view class='date-lis'>
+                    <view class='lis-title'>活动地址</view>
+                    <view class='lis-site'>深圳市龙华区建安大道890号 大定都比园E座277</view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 最下面的按钮 -->
+    <view class='bottom-button'>
+        <view class='buttom-collect'>
+            <view class='collect-icon'><van-icon name="star-o" /></view>
+            <view class='collect-text'>收藏</view>
+        </view>
+        <view class='button-message'>活动咨询</view>
+        <view class='button-apply' bindtap='onShows'>报名参加</view>
+    </view>
+
+    <!-- 报名弹框 -->
+    <view>
+        <van-popup show="{{ show }}" position="bottom" bind:close="onClose">
+            <view class='popup-input'>
+                <view class='popup-body'>
+                    <view class='popup-title'>
+                        <view class='titles'>填写报名信息</view>
+                        <view class='icons' bindtap='onClose'> <van-icon name="cross" color='#999999'/></view>
+                    </view>
+                    <view class='input-name'>
+                          <view class='names'>姓名</view>
+                          <view class='inputs'>
+                              <input type='text' placeholder='输入姓名' value='{{inputName}}' bindinput='inputName'></input>
+                          </view>
+                    </view>
+
+                    <view class='input-name'>
+                          <view class='names'>姓别</view>
+                          <view class='inputs'>
+                              <radio-group  bindchange="radioChange">
+                                  <radio class="radio"  value="1" checked="{{radioValue==1}}">
+                                      <text>男</text>
+                                  </radio>
+                                  <radio class="radio"  value="2" checked="{{radioValue==2}}">
+                                      <text>女</text>
+                                  </radio>
+                              </radio-group>
+                          </view>
+                    </view>
+
+                    <view class='input-name'>
+                          <view class='names'>手机</view>
+                          <view class='inputs'>
+                              <input type='number' placeholder='输入您的手机号' value='{{inputMobile}}' bindinput='inputMobile'></input>
+                          </view>
+                    </view>
+                    <view class='input-name'>
+                          <view class='names'>身份证</view>
+                          <view class='inputs'>
+                              <input type='idcard' placeholder='输入您的身份证号' value='{{inputIdentity}}' bindinput='inputIdentity'></input>
+                          </view>
+                    </view>
+                </view>
+            </view>
+            <view class='submit-input' bindtap='toastShows'>
+                提交信息
+            </view>
+        </van-popup>
+    </view>
+</view>

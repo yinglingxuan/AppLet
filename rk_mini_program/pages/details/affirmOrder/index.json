@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "确认订单",
+  "usingComponents": {
+    "van-stepper": "/dist/stepper/index",
+    "van-popup": "/dist/popup/index",
+    "van-radio": "/dist/radio/index",
+    "van-radio-group": "/dist/radio-group/index",
+    "van-icon": "/dist/icon/index"
+  }
+}

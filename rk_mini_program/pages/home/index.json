@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "博民健康",
+  "usingComponents": {
+     "lists":"/components/lists/index",
+     "safety": "/components/safety/index"
+  }
+}

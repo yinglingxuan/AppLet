@@ -1,0 +1,19 @@
+/* components/safety /index.wxss */
+/* 福利模块 */
+.welfare{
+  display: flex;
+  font-size: 20rpx;
+  color: #999999;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  margin-top: 30rpx;
+}
+.welfare .uls{
+  display: flex;
+  width: 25%;
+}
+.welfare .uls .lis-imgs image{
+  margin-top: 3rpx;
+  width: 27rpx;
+  height: 27rpx;
+}

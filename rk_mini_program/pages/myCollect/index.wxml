@@ -1,0 +1,58 @@
+<!--pages/myCollect/index.wxml-->
+<view>
+    <view class='community-top'>
+        <view class='community-left' bindtap='activity' data-id='1'><text class="{{activity=='1'?'text-border':''}}">资讯收藏</text></view>
+        <view class='community-right' bindtap='activity' data-id='2'><text class="{{activity=='2'?'text-border':''}}">商品收藏</text></view>
+    </view>
+
+    <!-- 资讯 -->
+    <view wx:if="{{activity=='1'}}">
+        <view class='community-lis'>
+            <van-swipe-cell right-width="{{ 65 }}" left-width="{{ 1 }}"  async-close bind:close="onCommunityDelete" data-id='1'>
+                <view class='list-body'>
+                    <view class='lis-text'>
+                        <view class='lis-title'>
+                          语雀是一款优雅高效的在线文档编 辑与协同工具， 让每个
+                        </view>
+                        <view class='lis-message'>
+                            <view class='lis-date'>2019-03-27</view>
+                            <view class='lis-icon'><van-icon name="eye-o"  size='35rpx'/></view>
+                            <view class='lis-count'>5567</view>
+                        </view>
+                    </view>
+                    <view class='lis-imgs'>
+                        <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+                    </view>
+                </view>
+                <view slot="right" class='deletes'>删除</view>
+              </van-swipe-cell>
+        </view>
+    </view>
+    <!-- 商品收藏 -->
+    <view  wx:if="{{activity=='2'}}">
+        <view class='product-lis'>
+            <van-swipe-cell right-width="{{ 65 }}" left-width="{{ 1 }}"  async-close bind:close="onProductDelete" data-id='1'>
+                <view class='product-body'>
+                     <view class='product-imgs'>
+                        <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+                     </view>
+                     <view class='product-title'>
+                        <view class='product-name'>SKIN肤感超润滑</view>
+                        <view class='product-price'>¥65.0</view>
+                     </view>
+                     <view class='product-buy'>立即购买</view>
+                </view>
+                <view slot="right" class='deletes'>删除</view>
+              </van-swipe-cell>
+        </view>
+    </view>
+
+
+    <view class='Null-body'>
+        <view class='Null-imgs'>
+            <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/shouddd@2x.png'></image>
+        </view>
+        <view class='Null-text'>你还没有商品收藏</view>
+    </view>
+
+</view>

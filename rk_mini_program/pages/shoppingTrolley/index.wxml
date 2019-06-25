@@ -1,0 +1,61 @@
+<!--pages/shoppingTrolley/index.wxml-->
+<view>
+    <view class='shopping-top'>
+        <view class='top-body'>
+          <view class='top-left'>共2件商品</view>
+          <view class='top-right' bindtap='compile'>{{compile}}</view>
+        </view>
+    </view>
+
+    <view class='shopping-uls'>
+        <!-- 遍历 -->
+        <view class='shopping-lis'  wx:for="{{ lists }}"  wx:key="index"  bindtouchmove='demo'>
+          <!-- 滑块单元格 -->
+          <van-swipe-cell right-width="{{ 65 }}" left-width="{{ 1 }}" async-close bind:close="onClose" data-id='{{ item }}'>
+              <!-- 多选 -->
+              <van-checkbox-group value="{{ result }}" bind:change="onChange">
+                  <view class='for-lis'>
+                      <view class='lis-checkbox'>
+                          <van-checkbox  name="{{ item }}" checked-color="#8EB85C"></van-checkbox>
+                      </view>
+                      <view class='lis-imgs'>
+                          <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/22222@2x.png'></image>
+                      </view>
+                      <view class='lis-details'>
+                          <view class='lis-name'>瑞康血糖仪</view>
+                          <view class='lis-price'>¥65.00</view>
+                          <view class='lis-standard'>已选：260ml*2</view>
+                      </view>
+                      <view class='lis-quantity'>
+                          <van-stepper value="{{ quCount }}" integer min="1" max="99" step="1" bind:change="quCount" data-change="{{ item }}"/>
+                      </view>
+                  </view>
+                </van-checkbox-group>
+             <view slot="right" class='slide-right'>删除</view>
+          </van-swipe-cell>
+        </view>
+    </view>
+
+    <view class='bottom'>
+      <view class='bottom-body'>
+          <view class='bottom-left'>
+              <van-checkbox-group value="{{ radio }}" bind:change="onRadio">
+                  <van-checkbox name="1" checked-color="#8EB85C" icon-class="icon-size">全选</van-checkbox>
+              </van-checkbox-group>
+          </view>
+          <view class='bottom-right' wx:if="{{compile=='编辑'}}">
+              <view class='bottom-count'>总计：<text>¥178</text></view>
+              <view class='bottom-close'>去结算</view>
+          </view>
+          <view class='bottom-delete' wx:if="{{compile=='完成'}}">
+              删除
+          </view>
+      </view>
+    </view>
+
+
+
+
+    <!-- 测试单选 -->
+    
+</view>

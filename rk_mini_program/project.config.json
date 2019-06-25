@@ -1,0 +1,284 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.6",
+	"appid": "wxb8cff53864f41995",
+	"projectname": "%E5%8D%9A%E6%B0%91%E5%81%A5%E5%BA%B7-1",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 33,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/home/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/search/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "详情页",
+					"pathName": "pages/details/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商品评论",
+					"pathName": "pages/details/comment/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "确认订单",
+					"pathName": "pages/details/affirmOrder/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "收货地址",
+					"pathName": "pages/sites/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增地址",
+					"pathName": "pages/sites/addSites/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选择支付方式",
+					"pathName": "pages/payment/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "购物车",
+					"pathName": "pages/shoppingTrolley/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "社区",
+					"pathName": "pages/community/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "社区详情",
+					"pathName": "pages/community/communityDetails/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "活动详情",
+					"pathName": "pages/community/activityDetails/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的收藏",
+					"pathName": "pages/myCollect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的推荐人",
+					"pathName": "pages/myReferrer/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "金额明细",
+					"pathName": "pages/myMoney/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "账户金额",
+					"pathName": "pages/myMoney/accountMoney/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "提现金额",
+					"pathName": "pages/myMoney/withdrawDeposit/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 17,
+					"name": "充值",
+					"pathName": "pages/myMoney/recharge/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "服务中心",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 19,
+					"name": "优惠卷",
+					"pathName": "pages/userCenter/myDiscount/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 20,
+					"name": "订单管理",
+					"pathName": "pages/userCenter/myOrder/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 21,
+					"name": "评论",
+					"pathName": "pages/userCenter/myEvaluate/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 22,
+					"name": "绑定手机",
+					"pathName": "pages/userCenter/bindNum/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 23,
+					"name": "账号与安全",
+					"pathName": "pages/userCenter/accountSafe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 24,
+					"name": "安全中心",
+					"pathName": "pages/userCenter/changePassword/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 25,
+					"name": "添加银行卡",
+					"pathName": "pages/userCenter/add_bankCard/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 26,
+					"name": "我的银行卡",
+					"pathName": "pages/userCenter/myBankCard/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 27,
+					"name": "解除绑定",
+					"pathName": "pages/userCenter/relieveBind/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的优惠券",
+					"pathName": "pages/userCenter/myDiscount/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "会员",
+					"pathName": "pages/member/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "二维码",
+					"pathName": "pages/member/memberPay/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "授权",
+					"pathName": "pages/home/impower/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单编号",
+					"pathName": "pages/details/orderSerial/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

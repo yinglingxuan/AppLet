@@ -1,0 +1,18 @@
+<!--pages/home/impower/index.wxml-->
+<view>
+   <view class='impoer-body'>
+      <view class='impoer-imgs'><image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image></view>
+      <view class='impoer-text'>
+          <view class='impoer-name'>积家系统</view>
+          <view class='impoer-txt'>欢迎你来到博民健康</view>
+      </view>
+   </view>
+   <view class='impoert-loge'>
+      <view class='loge-imgs'><image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/123123.png'></image></view>
+      <view class='loge-text'>腾讯投资平台-博民健康</view>
+   </view>
+   <button class='login'  open-type="getUserInfo" bindgetuserinfo='log'> 
+      <view class='icon'></view> 
+      <view>立即进入</view>  
+   </button>
+</view>

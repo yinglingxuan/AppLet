@@ -1,0 +1,290 @@
+<!--pages/order/order.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="page__bd">
+    <!-- tab切换 -->
+    <!-- <view class="top-tab flexItem flex-tab">
+        <view data-otype="pay||receive||take" class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName"                 data-idx="{{idx}}" bindtap="switchTab">
+            {{itemName}}
+        </view>
+    </view> -->
+    <view class="swiper-tab">
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" data-otype="pay" bindtap="swichNav">待付款</view>
+      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" data-otype="deliver" bindtap="swichNav">待发货</view>
+      <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" data-otype="receive" bindtap="swichNav">待收货</view>
+      <view class="swiper-tab-list {{currentTab==4 ? 'on' : ''}}" data-current="4" bindtap="swichNav">待评价</view>
+    </view>
+    <scroll-view class="scrollY" scroll-y>
+      <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{scrollHeight}}px" bindchange="bindChange">
+        <!-- 全部 -->
+        <swiper-item>
+          <view class="search_no" wx:if="{{!orderList0.length}}">
+            <view class="font_14">
+              <image class="scimg" src="//static.tgxmall.com/img/nothing-order.png" mode='{{mod[1]}}'>
+              </image>
+            </view>
+            <text>没有可用订单/(ㄒoㄒ)/~~</text>
+          </view>
+          <view class="view1 width20" wx:for="{{orderList0}}">
+            <view class='orderList'>
+              <view class="head">
+                <view class="img-box">
+                  <text>2019-08-05 17:44:05</text>
+                </view>
+                <text class="violet">已取消</text>
+              </view>
+              <!--  -->
+              <view class="middle">
+                <view class="order-img">
+                  <image src="//cdn.tgxmall.com//upload/goods/2018-07/5b5047d23950f.jpg?x-oss-process=style/jpeg-quality-50" class="lazy" data-original="//cdn.tgxmall.com//upload/goods/2018-07/5b5047d23950f.jpg?x-oss-process=style/jpeg-quality-50" alt="" style="display: block;" mode='scaleToFill'></image>
+                </view>
+                <view class="middle-content">
+                  <view class="middle-left">
+                    <text class="multilineHide">雪玲妃 柠檬面部温和去角质磨砂膏/120g</text>
+                    <text class="gray" style="margin-top:2px">规格：120g</text>
+                  </view>
+                  <view class="middle-right">
+                    <view>
+                      <text>¥39.90</text>
+                    </view>
+                    <view>
+                      <text>x1</text>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <!--  -->
+              <view class="bottom">
+                <view class="bottom-top border-line font12">
+                  <view class="gxPrePayment gray">共1件商品 小计：
+                    <text>¥31.33</text>
+                  </view>
+                </view>
+                <view class="bottom-down">
+                  <text class="active sure-goods">删除订单</text>
+                </view>
+              </view>
+            </view>
+            <!--  -->
+          </view>
+        </swiper-item>
+
+        <!-- 待付款 -->
+        <swiper-item>
+          <view class="search_no" wx:if="{{!orderList1.length}}">
+            <view class="font_14">
+              <image class="scimg" src="//static.tgxmall.com/img/nothing-order.png" mode='{{mod[1]}}'>
+              </image>
+            </view>
+            <text>没有可用订单/(ㄒoㄒ)/~~</text>
+          </view>
+          <view class="view1 width20" wx:for="{{orderList1}}">
+          <view class='orderList'>
+            <view class="head">
+              <view class="img-box fl">
+                <text class="fl">雪玲妃授权店</text>
+              </view>
+              <text class="violet fr">已取消</text>
+            </view>
+            <!--  -->
+            <view class="middle">
+              <view class="order-img">
+                <image src="//cdn.tgxmall.com//upload/goods/2018-07/5b5047d23950f.jpg?x-oss-process=style/jpeg-quality-50" class="lazy" data-original="//cdn.tgxmall.com//upload/goods/2018-07/5b5047d23950f.jpg?x-oss-process=style/jpeg-quality-50" alt="" style="display: block;"></image>
+              </view>
+              <view class="middle-content fr">
+                <view class="middle-left fl">
+                  <text class="multilineHide">雪玲妃 柠檬面部温和去角质磨砂膏/120g</text>
+                  <text class="gray font12" style="margin-top:2px">规格：120g</text>
+                </view>
+                <view class="middle-right">
+                  <view>
+                    <text>¥39.90</text>
+                  </view>
+                  <view>
+                    <text>x1</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+
+            <view class="bottom">
+              <view class="bottom-top border-line font12">
+                <text class="gxPrePayment gray">共享分配预付：¥31.33</text>
+              </view>
+              <view class="bottom-down">
+                <text class="active sure-goods">去付款</text>
+                <text>取消订单</text>
+              </view>
+            </view>
+            </view>
+          </view>
+        </swiper-item>
+        <!--  -->
+        <!-- 待发货 -->
+        <swiper-item>
+          <view class="search_no" wx:if="{{!orderList2.length}}">
+            <view class="font_14">
+              <image class="scimg" src="//static.tgxmall.com/img/nothing-order.png" mode='{{mod[1]}}'>
+              </image>
+            </view>
+            <text>没有可用订单/(ㄒoㄒ)/~~</text>
+          </view>
+          <view class="view1 width20" wx:for="{{orderList2}}">
+          <view class='orderList'>
+            <view class="head">
+              <view class="img-box fl">
+                <text class="fl">雪玲妃授权店</text>
+              </view>
+              <text class="violet fr">已取消</text>
+            </view>
+            <!--  -->
+            <view class="middle">
+              <view class="order-img">
+                <image src="//cdn.tgxmall.com//upload/goods/2018-07/5b5047d23950f.jpg?x-oss-process=style/jpeg-quality-50" class="lazy" data-original="//cdn.tgxmall.com//upload/goods/2018-07/5b5047d23950f.jpg?x-oss-process=style/jpeg-quality-50" alt="" style="display: block;"
+                  mode='{{mod[1]}}'></image>
+              </view>
+              <view class="middle-content fr">
+                <view class="middle-left fl">
+                  <text class="multilineHide">雪玲妃 柠檬面部温和去角质磨砂膏/120g</text>
+                  <text class="gray font12" style="margin-top:2px">规格：120g</text>
+                </view>
+                <view class="middle-right">
+                  <view>
+                    <text>¥39.90</text>
+                  </view>
+                  <view>
+                    <text>x1</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <!--  -->
+            <!--  -->
+            <view class="bottom">
+              <view class="bottom-top border-line font12">
+                <text class="gxPrePayment gray">共享分配预付：¥31.33</text>
+              </view>
+              <view class="bottom-down">
+                <text class="active fr sure-goods">去付款</text>
+                <text class="fr">取消订单</text>
+              </view>
+            </view>
+            </view>
+          </view>
+        </swiper-item>
+
+        <!-- 已发货 -->
+        <swiper-item>
+          <view class="search_no" wx:if="{{!orderList3.length}}">
+            <view class="font_14">
+              <image class="scimg" src="//static.tgxmall.com/img/nothing-order.png" mode='{{mod[1]}}'>
+              </image>
+            </view>
+            <text>没有可用订单/(ㄒoㄒ)/~~</text>
+          </view>
+          <view class="view1 width20" wx:for="{{orderList3}}">
+          <view class='orderList'>
+            <view class="head">
+              <view class="img-box fl">
+                <text class="fl">雪玲妃授权店</text>
+              </view>
+              <text class="violet fr">已取消</text>
+            </view>
+            <!--  -->
+            <view class="middle">
+              <view class="order-img">
+                <image src="//cdn.tgxmall.com//upload/goods/2018-07/5b5047d23950f.jpg?x-oss-process=style/jpeg-quality-50" class="lazy" data-original="//cdn.tgxmall.com//upload/goods/2018-07/5b5047d23950f.jpg?x-oss-process=style/jpeg-quality-50" alt="" style="display: block;"
+                  mode='{{mod[1]}}'></image>
+              </view>
+              <view class="middle-content fr">
+                <view class="middle-left fl">
+                  <text class="multilineHide">雪玲妃 柠檬面部温和去角质磨砂膏/120g</text>
+                  <text class="gray font12" style="margin-top:2px">规格：120g</text>
+                </view>
+                <view class="middle-right">
+                  <view>
+                    <text>¥39.90</text>
+                  </view>
+                  <view>
+                    <text>x1</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="bottom">
+              <view class="bottom-top border-line font12">
+                <text class="gxPrePayment gray">共享分配预付：¥31.33</text>
+              </view>
+              <view class="bottom-down">
+                <text class="active fr sure-goods">确认收货</text>
+                <text class="fr sure-goods">查看物流</text>
+                <text class="fr sure-goods">共享分配明细</text>
+              </view>
+            </view>
+            </view>
+          </view>
+        </swiper-item>
+
+        <!-- 已完成 -->
+        <swiper-item>
+          <view class="search_no" wx:if="{{!orderList3.length}}">
+            <view class="font_14">
+              <image class="scimg" src="//static.tgxmall.com/img/nothing-order.png" mode='{{mod[1]}}'>
+              </image>
+            </view>
+            <text>没有可用订单/(ㄒoㄒ)/~~</text>
+          </view>
+          <view class="view1 width20" wx:for="{{orderList3}}">
+          <view class='orderList'>
+            <view class="head">
+              <view class="img-box">
+                <text>雪玲妃授权店</text>
+              </view>
+              <text class="violet fr">已取消</text>
+            </view>
+            <!--  -->
+            <view class="middle">
+              <view class="order-img">
+                <image src="//cdn.tgxmall.com//upload/goods/2018-07/5b5047d23950f.jpg?x-oss-process=style/jpeg-quality-50" class="lazy" data-original="//cdn.tgxmall.com//upload/goods/2018-07/5b5047d23950f.jpg?x-oss-process=style/jpeg-quality-50" alt="" style="display: block;"
+                  mode='{{mod[1]}}'></image>
+              </view>
+              <view class="middle-content">
+                <view class="middle-left">
+                  <text class="multilineHide">雪玲妃 柠檬面部温和去角质磨砂膏/120g</text>
+                  <text class="gray font12" style="margin-top:2px">规格：120g</text>
+                </view>
+                <view class="middle-right">
+                  <view>
+                    <text>¥39.90</text>
+                  </view>
+                  <view>
+                    <text>x1</text>
+                  </view>
+                </view>
+              </view>
+              <text class="Highlight sure-goods" lock="false" id="shareBtn-receipt">
+                  分享
+                  </text>
+            </view>
+            <!--  -->
+            <!--  -->
+            <view class="bottom">
+              <view class="bottom-top border-line font12">
+                <text class="gxPrePayment gray">共享分配预付：¥31.33</text>
+                <text>当前实付：0.00（免运费）</text>
+              </view>
+              <view class="bottom-down">
+                <text class="active fr sure-goods">确认收货</text>
+                <text class="fr sure-goods">查看物流</text>
+                <text class="fr sure-goods">共享分配明细</text>
+              </view>
+            </view>
+            </view>
+            <!--  -->
+          </view>
+        </swiper-item>
+      </swiper>
+    </scroll-view>
+
+  </view>
+</view>

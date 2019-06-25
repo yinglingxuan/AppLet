@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "购物车",
+  "usingComponents": {
+    "van-swipe-cell": "/dist/swipe-cell/index",
+    "van-checkbox": "/dist/checkbox/index",
+    "van-checkbox-group": "/dist/checkbox-group/index",
+
+    "van-radio": "/dist/radio/index",
+    "van-radio-group": "/dist/radio-group/index",
+
+    "van-stepper": "/dist/stepper/index"
+  }
+}

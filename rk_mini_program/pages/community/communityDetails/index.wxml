@@ -1,0 +1,56 @@
+<!--pages/community/communityDetails/index.wxml-->
+<view style='background:#fff;height:{{winHeight}}px;'>
+    <view class='details-body'>
+        <view class='details-title'>
+            {{demoData.title}}
+        </view>
+        <view>
+            <view class='details-name'>{{demoData.name}}<text>{{demoData.dates}}</text></view>
+        </view>
+        <view class='details-lis' wx:for='{{demoData.lists}}'>
+            <view class='lis-title' wx:if="{{item.title!=null||item!=''}}">{{item.title}}</view>
+            <view class='lis-text' wx:for='{{item.texts}}'>{{item}}</view>
+            <view class='lis-imgs' wx:for='{{item.imgs}}'>
+                <image src='{{item}}'></image>
+            </view>
+        </view>
+    </view>
+    <view style='height:25rpx;background:#F2F2F2;'></view>
+    <!-- 评论模块 -->
+    <view class='details-comment'>
+        <view class='comment-list'>
+            <view class='comment-imgs'>
+                <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+            </view>
+            <view class='comment-body'>
+                <view class='comment-name'>爱笑的小菜</view>
+                <view class='comment-date'>2019-09-10</view>
+                <view class='comment-text'>抱拳，烙铁</view>
+                <view class='comment-reply'>
+                    <view class='reply-name'>国飞/主治一生：<text>2019-09-10</text></view>
+                    <view class='reply-more'>查看更多</view>
+                </view>
+                <view class='comment-icon'>
+                    <view class='icon-like'><van-icon name="like-o" /></view>
+                    <view>2</view>
+                    <view class='icon-chat'><van-icon name="chat-o" /></view>
+                    <view>评论</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class='inputs'>
+        <view class='input-text'>
+            <input type='text' placeholder='看评论说什么？'></input>
+        </view>
+        <view class='input-like'>
+            <van-icon name="like-o" />
+        </view>
+        <view class='a'>10</view>
+        <view class='input-star'>
+            <van-icon name="star-o" />
+        </view>
+        <view class='a'>88</view>
+    </view>
+
+</view>

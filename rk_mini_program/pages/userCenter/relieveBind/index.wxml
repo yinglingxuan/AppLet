@@ -1,0 +1,7 @@
+<!--pages/userCenter/relieveBind/index.wxml-->
+<view class='cardList'>
+  <view class='cardItem'>
+    储蓄卡(尾号7985)
+  </view>
+</view>
+<button class='changeBtn' bindtap='relieveBind'>解除绑定</button>

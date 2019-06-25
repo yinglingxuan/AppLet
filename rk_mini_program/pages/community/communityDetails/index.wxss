@@ -1,0 +1,151 @@
+/* pages/community/communityDetails/index.wxss */
+.details-body{
+   width: 92%;
+   margin: 0 auto;
+}
+
+.details-title{
+   font-size: 46rpx;
+   text-indent:30rpx;
+   line-height: 60rpx;
+}
+.details-name{
+   margin-top: 30rpx;
+   font-size: 28rpx;
+   margin-bottom: 30rpx;
+}
+.details-name text{
+   padding-left: 20rpx;
+   color: #9B9B9B;
+}
+.details-lis{
+   padding-bottom: 30rpx;
+}
+.details-lis .lis-title{
+   font-size: 36rpx;
+   font-weight: 600;
+   margin-bottom: 50rpx;
+}
+.details-lis .lis-text{
+   font-size: 28rpx;
+   color: #7D7C7C;
+   line-height: 45rpx;
+}
+.details-lis .lis-imgs image{
+   width: 100%;
+   height: 360rpx;
+   border-radius: 20rpx;
+   margin-top: 30rpx;
+}
+
+
+/* 评论的模块 */
+.details-comment{
+   
+}
+.details-comment .comment-list{
+   display: flex;
+   border-bottom: solid 1rpx #F6F5F5;
+   padding: 20rpx 5%;
+   padding-bottom: 40rpx;
+}
+.details-comment .comment-list .comment-imgs{
+    padding: 0 10rpx;
+}
+.details-comment .comment-list .comment-imgs image{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+    
+}
+.details-comment .comment-list .comment-body{
+   width: 100%;
+}
+.details-comment .comment-list .comment-body .comment-name{
+      font-size: 28rpx;
+      color: #666666;
+}
+.details-comment .comment-list .comment-body .comment-date{
+   font-size: 24rpx;
+   color: #999999;
+   line-height: 40rpx;
+}
+.details-comment .comment-list .comment-body .comment-text{
+   font-size: 32rpx;
+   color: #2B3149;
+   line-height: 80rpx;
+}
+
+
+.details-comment .comment-list .comment-body .comment-reply{
+    background: #F6F6F6;
+    padding: 20rpx 30rpx;
+    border-radius: 20rpx;
+    margin-bottom: 20rpx;
+}
+.details-comment .comment-list .comment-body .comment-reply .reply-name{
+    font-size: 28rpx;
+    color: #8EB85C;
+}
+.details-comment .comment-list .comment-body .comment-reply .reply-name text{
+   font-size: 24rpx;
+   color: #CCCCCC;
+   line-height: 40rpx;
+}
+.details-comment .comment-list .comment-body .comment-reply .reply-more{
+   font-size: 24rpx;
+   color: #999999;
+   margin-top: 20rpx;
+}
+.details-comment .comment-list .comment-body .comment-icon{
+   display: flex;
+   font-size: 28rpx;
+}
+.icon-like{
+   padding-top: 2rpx;
+   padding-right: 4rpx;
+   margin-left: 65%;
+}
+.icon-chat{
+  padding-top: 2rpx;
+  padding-right: 4rpx;
+  margin-left: 40rpx;
+}
+
+.inputs{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 30rpx 0;
+}
+.inputs .input-text{
+   background: #F4F4F4;
+   width: 70%;
+   padding: 10rpx 10rpx;
+   border-radius: 15rpx;
+
+}
+.inputs .input-text input{
+   font-size: 24rpx;
+   line-height: 150rpx;
+}
+.input-like{
+   font-size: 45rpx;
+   color: #666666;
+   margin-left: 20rpx;
+   margin-right: 5rpx;
+   margin-top: 10rpx;
+}
+.a{
+   font-size: 28rpx;
+   line-height: 50rpx;
+   margin-right: 10rpx;
+   margin-top: 10rpx;
+}
+.input-star{
+   font-size: 45rpx;
+   color: #666666;
+   margin-left: 20rpx;
+   margin-right: 5rpx;
+   margin-top: 10rpx;
+}

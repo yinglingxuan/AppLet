@@ -1,0 +1,49 @@
+/* pages/member/memberPay/index.wxss */
+.pay-top{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  padding-top: 60rpx;
+}
+.pay-top .pay-imgs{
+   width: 130rpx;
+}
+.pay-top .pay-imgs image{
+   border-radius: 50%;
+   width: 100rpx;
+   height: 100rpx;
+} 
+.pay-top .pay-name{
+   font-size: 32rpx;
+   color: #fff;
+}
+.pay-top .pay-name view image{
+   width: 140rpx;
+   height: 40rpx;
+   margin-top: 5rpx;
+}
+
+.pay-body{
+   width: 90%;
+   margin: auto;
+   margin-top: 100rpx;
+}
+.pay-body .pay-ul{
+   background: #fff;
+   padding: 90rpx 0;
+   border-radius: 20rpx;
+}
+.pay-body .body-imgs{
+   margin:  0 auto;
+   width: 460rpx;
+}
+.pay-body .body-imgs image{
+   width: 460rpx;
+   height: 450rpx;
+}
+.pay-body .body-text{
+  text-align: center;
+  color: #666666;
+  font-size: 32rpx;
+  margin-top: 40rpx;
+}

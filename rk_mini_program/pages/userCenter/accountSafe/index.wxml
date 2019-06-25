@@ -1,0 +1,33 @@
+<!--pages/userCenter/accountSafe/index.wxml-->
+<view class='optionList'>
+  <view class='itemName'>
+    <view class='itemTitle'>账号绑定</view>
+    <view class='contentBox'>
+      <view class='content_L'>手机号</view>
+      <view class='content_R'>
+      13266747468
+      <van-icon name="arrow"/>
+      </view>
+    </view>
+  </view>
+  <view class='itemName'>
+    <view class='itemTitle'>银行卡管理</view>
+    <view class='contentBox'>
+      <view class='content_L'>银行卡</view>
+      <view class='content_R'>
+      添加银行卡
+      <van-icon name="arrow" class='icon'/>
+      </view>
+    </view>
+  </view>
+  <view class='itemName'>
+    <view class='itemTitle'>支付密码管理</view>
+    <view class='contentBox'>
+      <view class='content_L'>支付密码</view>
+      <view class='content_R'>
+      修改支付/提现密码
+      <van-icon name="arrow"/>
+      </view>
+    </view>
+  </view>
+</view>

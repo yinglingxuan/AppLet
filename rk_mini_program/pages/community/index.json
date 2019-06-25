@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "社区",
+  "usingComponents": {
+    "van-icon": "/dist/icon/index"
+  }
+}

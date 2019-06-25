@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "选择支付方式",
+  "usingComponents": {
+      "van-popup": "/dist/popup/index"
+  }
+}

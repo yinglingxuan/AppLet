@@ -1,0 +1,177 @@
+/* pages/community/activityDetails/index.wxss */
+.title-imgs{
+  z-index: 0;
+}
+.title-imgs image{
+  width: 100%;
+  height: 380rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  z-index: 0;
+}
+
+.activity-body{
+   padding: 0 5%;
+   border-radius: 20rpx 20rpx 0 0;
+   margin-top: -20rpx; 
+   position: absolute;
+   z-index: 30;
+   background: #fff;
+   margin-bottom: 120rpx;
+}
+.activity-body .activity-content{
+   font-size: 48rpx;
+   font-weight: 500;
+   padding: 30rpx 0;
+}
+.activity-body .activity-text{
+   font-size: 30rpx;
+   color: #7D7C7C;
+   padding-bottom: 30rpx;
+}
+.activity-body .activity-lecture{
+   font-size: 40rpx;
+   color: #000000;
+   font-weight: 500;
+   margin-bottom: 30rpx;
+}
+.activity-body .lecture-imgs{
+   margin-bottom: 30rpx;
+   width: 100%;
+}
+.activity-body .lecture-imgs img{
+   width: 100%;
+   height: 520rpx;
+}
+
+/* //活动时间 */
+
+.date-body .body-list{
+   display: flex;
+   margin-bottom: 50rpx;
+}
+.date-body .body-list .date-icon{
+   margin-right: 30rpx;
+   padding-top: 10rpx;
+}
+.date-body .body-list .date-lis .lis-title{
+    font-size: 40rpx;
+    color: #000;
+    font-weight: 500;
+    line-height: 60rpx;
+}
+.date-body .body-list .date-lis .lis-date{
+   font-size: 32rpx;
+   color: #575757;
+   line-height: 80rpx;
+}
+.date-body .body-list .date-lis  .lis-sign{
+   color: #7D7C7C;
+   font-size: 28rpx;
+}
+.date-body .body-list .date-lis .lis-official{
+    color: #7D7C7C;
+    font-size: 28rpx;
+}
+.date-body .body-list .date-lis .lis-site{
+    color: #7D7C7C;
+    font-size: 28rpx;
+    line-height: 60rpx;
+}
+
+/* //最下面的按钮 */
+.bottom-button{
+   border-top: solid 1rpx #9F9F9F;
+   position: fixed;
+   bottom: 0rpx;
+   z-index: 40;
+   background: #fff;
+   width: 100%;
+   display: flex;
+   padding: 20rpx 20rpx;
+}
+.bottom-button .buttom-collect{
+   width: 100rpx;
+}
+.bottom-button .buttom-collect .collect-icon{
+   text-align: center;
+}
+.bottom-button .buttom-collect .collect-text{
+   font-size: 26rpx;
+   color: #000;
+   text-align: center;
+}
+.bottom-button  .button-message{
+   margin-left: 20rpx;
+   line-height: 80rpx;
+   text-align: center;
+   width: 35%;
+   margin-right: 20rpx;
+   font-size: 36rpx;
+   color: #fff;
+   background: #333333;
+   border-radius: 20rpx;
+}
+.bottom-button  .button-apply{
+   line-height: 80rpx;
+   text-align: center;
+   width: 35%;
+   margin-right: 20rpx;
+   font-size: 36rpx;
+   color: #fff;
+   background: #8EB85C;
+   border-radius: 20rpx;
+}
+
+/* //弹框信息 */
+.popup-input{
+   border-bottom: solid 1rpx #EFEFEF;
+}
+.popup-input .popup-body{
+   width: 92%;
+   margin:0 auto;
+   margin-top: 50rpx;
+}
+.popup-input .popup-body .popup-title{
+   display: flex;
+   font-size: 36rpx;
+   color: #000;
+   margin-bottom: 30rpx;
+}
+.popup-input .popup-body .popup-title .titles{
+    width: 92%;
+}
+.popup-input .popup-body .popup-title .icons{
+    width: 8%;
+    text-align: right;
+    margin-top:-20rpx; 
+    font-size: 36rpx;
+}
+
+.popup-input .popup-body .input-name{
+    display: flex;
+    font-size: 36rpx;
+    margin-bottom: 20rpx;
+}
+.popup-input .popup-body .input-name .names{
+    width: 140rpx;
+    line-height: 50rpx;
+}
+.popup-input .popup-body .input-name .inputs input{
+   background: #FAFAFA;
+   padding: 10rpx 10rpx;
+   margin-top: -12rpx;
+   font-size: 32rpx;
+}
+
+.popup-input .popup-body .input-name .inputs .radio{
+    margin-right: 20rpx;
+}
+.submit-input{
+  width: 92%;
+  margin:30rpx auto;
+  text-align: center;
+  padding: 10rpx 0rpx;
+  background: #8EB85C;
+  color: #fff;
+  border-radius: 20rpx;
+}

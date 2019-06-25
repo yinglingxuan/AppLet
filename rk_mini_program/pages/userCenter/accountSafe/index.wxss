@@ -1,0 +1,37 @@
+/* pages/userCenter/accountSafe/index.wxss */
+.optionList{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  width: 90%;
+  margin: 0 auto;
+}
+.itemName{
+
+}
+.itemTitle{
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #999;
+  font-size: 24rpx;
+}
+.contentBox{
+  height: 74rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+}
+.content_L{
+  color: #333333;
+  font-size: 28rpx;
+}
+.content_R{
+  color: #999999;
+  font-size: 24rpx;
+}
+.icon{
+  padding-top: 4rpx;
+}

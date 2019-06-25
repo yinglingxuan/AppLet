@@ -1,0 +1,41 @@
+<!--pages/userCenter/myEvaluate/index.wxml-->
+<!-- <view wx:for="{{paging.list[index]}}" wx:key="commentId" class="figure"> -->
+  <view class="main">
+    <view class="flex ac jc p20">
+      <textarea placeholder="宝贝满足你的期待吗？说说它的优点与不足吧"></textarea>
+    </view>
+    <!-- 上传 -->
+    <view class="weui-cells flex">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <view class="weui-uploader">
+            <view class="weui-uploader__bd">
+              <view class="weui-uploader__files" id="uploaderFiles">
+                <block wx:for="{{files}}" wx:key="*this">
+                  <view class="weui-uploader__file flex ac jc" bindlongpress="deleteImage" id="{{item}}" data-index="{{index}}">
+                    <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                    <!-- <view class="close closeClick" bindtap="closeClick"></view> -->
+                    <van-icon name="clear" class="closeClick" size="14px" bindtap="closeClick"/>
+                  </view>
+                </block>
+              </view>
+
+              <view class="weui-uploader__input-box ">
+                <view class="weui-uploader__input" bindtap="chooseImage">
+                  <image src="/imgs/my/addImg.png" class="weui-uploader__input_img"></image>
+                </view>
+              </view>
+
+            </view>
+
+          </view>
+        </view>
+      </view>
+      <text class="imgNum">{{files.length}} / 4</text>
+    </view>
+  </view>
+<!-- </view> -->
+
+<view class="flex ac jc foot">提交评价</view>
+<include wx:if="{{loading}}" src="../../../../tpl/loading.wxml" />
+<view wx:if="{{showTop}}" class="ico-top" bindtap="backTop"></view>

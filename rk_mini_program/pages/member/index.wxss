@@ -1,0 +1,213 @@
+/* pages/member/index.wxss */
+.member-background{
+   height: 400rpx;
+   background: url("https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/011@2x.png") no-repeat;
+   background-size:100%; 
+}
+.member-top{
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   padding-top: 40rpx;
+}
+.member-top .top-imgs image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    margin-right: 25rpx;
+}
+.member-top .top-title .top-name{
+    color: #fff;
+    font-size: 32rpx;
+    padding-bottom: 17rpx;
+}
+.member-top .top-title .title-imgs image{
+    width: 122rpx;
+    height: 38rpx;
+}
+
+
+/* 轮播图 */
+.card{
+  margin-top: -220rpx;
+  
+}
+.swiper-block{
+  height: 370rpx;
+  width: 100%;
+}
+.swiper-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow:unset;
+}
+.swiper-body{
+  border-radius:20rpx;
+  width: 606rpx;
+  height: 370rpx;
+  margin: 0 30rpx;
+  background: #fff;
+}
+
+.swiper-body .member-name{
+    color: #fff;
+    font-size: 46rpx;
+    margin-left: 120rpx;
+    padding-top: 25rpx;
+}
+.swiper-body .member-name text{
+    font-size: 16rpx;
+    color: #919191;
+    padding: 1rpx 10rpx;
+    border-radius: 20rpx;
+}
+.swiper-body .member-money{
+    color: #fff;
+    font-size: 70rpx;
+    padding-top:180rpx;
+    padding-right: 40rpx;
+    text-align: right;
+}
+
+.swiper-body .member-money text{
+   font-size: 36rpx;
+}
+
+
+.common{
+  background: linear-gradient(to left,#C9C9C9, #FFFFFF,#C7C7C7);
+}
+.elite{
+  color: #7F6E51;
+  background: linear-gradient(to left,#F5D59D, #FFF0D7,#F7DDB0);
+}
+.advanced {
+  color: #637A45;
+  background: linear-gradient(to left,#B2EF69, #D8FEAA,#C2F070);
+}
+.partner{
+  color: #000;
+  background: linear-gradient(to left,#E4B06B, #F9D58B,#E3B06B);
+}
+.font-partner{
+     color: #E3AE67;
+}
+
+/* 轮播图下的收益 */
+.member-body{
+   width: 90%;
+   margin: auto;
+   margin-top: 50rpx;
+
+   margin-bottom: 20rpx;
+}
+.member-body .body-title{
+   font-size: 36rpx;
+   color: #26344C;
+   font-weight: bold;
+}
+.member-body .body-ul{
+    margin-top: 40rpx;
+    margin-bottom: 40rpx;
+    border: solid 2rpx #DAB677;
+    border-radius: 20rpx;
+    display: flex;
+    flex-wrap:wrap;
+    padding: 30rpx 0;
+}
+.member-body .body-ul .body-lis{
+    width: 24%;
+    margin-bottom: 30rpx;
+}
+.member-body .body-ul .body-lis .lis-imgs{
+    width: 100rpx;
+    margin: 0 auto;
+}
+.member-body .body-ul .body-lis .lis-imgs image{
+    width: 100rpx;
+    height: 100rpx;
+}
+.member-body .body-ul .body-lis .lis-name{
+    text-align: center;
+}
+
+/* 礼包支付 */
+.gift-bag{
+  display: flex;
+  box-shadow: 1px 3px 8px rgba(000, 000, 000,0.08);
+  padding: 10rpx 20rpx;
+}
+.gift-bag .bag{
+    width: 73%;
+    line-height: 70rpx;
+    font-size: 32rpx;
+    color: #D7BA88;
+}
+.gift-bag .pay{
+   padding: 15rpx 20rpx;
+   background: #999999;
+   border-radius: 10rpx;
+   color: #fff;
+   font-size: 32rpx;
+}
+
+.explains{
+    border: solid 2rpx #DAB677;
+    border-radius: 20rpx;
+    padding: 20rpx 20rpx;
+    font-size: 24rpx;
+    color: #999999;
+    line-height: 40rpx;
+    margin-top: 50rpx;
+    margin-bottom: 40rpx;
+}
+
+/* 活动轮播 */
+.activity-bodys{
+   padding-bottom: 50rpx;
+   margin-top: -200rpx;
+}
+.activity-swiper-block{
+  height: 428rpx;
+  width: 100%;
+}
+.activity-swiper-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow:unset;
+}
+.activity-swiper-item .activity-ul {
+  padding-bottom: 20rpx;
+  background: #fff;
+  border-radius: 20rpx;
+  box-shadow: 1px 6px 8px rgba(000, 000, 000,0.08);
+}
+.activity-swiper-item .activity-ul .activity-imgs image{
+  width: 630rpx;
+  height: 322rpx;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.activity-swiper-item .activity-ul .activity-name{
+   font-size: 32rpx;
+   padding-left: 20rpx;
+}
+.activity-swiper-item .activity-ul .activity-bottom{
+   display: flex;
+   padding-left: 20rpx;
+   color: #7D7C7C;
+   font-size: 26rpx;
+}
+.activity-swiper-item .activity-ul .activity-bottom .bottom-left{
+   width: 75%;
+}
+.activity-swiper-item .activity-ul .activity-bottom .bottom-right{
+   text-align: center;
+   padding: 5rpx 20rpx;
+   border-radius: 5rpx;
+   color: #fff;
+   background: #8EB85C;
+}

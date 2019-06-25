@@ -1,0 +1,57 @@
+<!--pages/userCenter/myDiscount/index.wxml-->
+<view class="menu_box">
+  <text class='menu1 {{menuTapCurrent=="0"?"borders":""}}' data-current="0" catchtap="menuTap">未使用</text>
+  <text class='menu2 {{menuTapCurrent=="1"?"borders":""}}' data-current="1" catchtap="menuTap">已使用</text>
+  <text class='menu2 {{menuTapCurrent=="2"?"borders":""}}' data-current="2" catchtap="menuTap">已失效({{invalidNum}})</text>
+</view>
+<view class="tab1" hidden="{{menuTapCurrent!='0'}}">
+  <view class='couponBox'>
+    <view class='lists background-url-one'>
+      <view class='left'>
+        <text>5</text>
+        <view>满168使用</view>
+      </view>
+      <view class='centre'>
+        <view><text>康康券</text></view>
+        <view>05月31日 00:00 过期</view>
+      </view>
+      <view class='right'>
+        <view class='sureUse useBtn'>去使用</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="tab2" hidden="{{menuTapCurrent!='1'}}">
+<view class='couponBox'>
+    <view class='lists background-url-one'>
+      <view class='left'>
+        <text>5</text>
+        <view>满168使用</view>
+      </view>
+      <view class='centre'>
+        <view><text>康康券</text></view>
+        <view>05月31日 00:00 过期</view>
+      </view>
+      <view class='right'>
+        <view class='notUse useBtn'>已使用</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="tab3" hidden="{{menuTapCurrent!='2'}}">
+<view class='couponBox'>
+    <view class='lists background-url-one'>
+      <view class='left'>
+        <text>5</text>
+        <view>满168使用</view>
+      </view>
+      <view class='centre'>
+        <view><text>康康券</text></view>
+        <view>05月31日 00:00 过期</view>
+      </view>
+      <view class='right'>
+        <view class='notUse useBtn'>已失效</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "商品详情",
+  "usingComponents": {
+      "safety": "/components/safety/index",
+      "coupons": "/components/coupons/index",
+      "van-stepper": "/dist/stepper/index",
+      "van-popup": "/dist/popup/index",
+      "van-icon": "/dist/icon/index"
+  }
+}

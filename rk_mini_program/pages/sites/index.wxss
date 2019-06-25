@@ -1,0 +1,96 @@
+/* pages/site /index.wxss */
+.middle .middle-body{
+  /* border: solid 1rpx red; */
+  width: 420rpx;
+  margin: 0 auto;
+  padding-top: 400rpx;
+}
+.middle .middle-imgs{
+   width: 200rpx;
+   height: 160rpx;
+   margin: 0 auto;
+   background: url('https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/dizhiaa@2x.png') no-repeat;
+   background-size: 100%;
+}
+.middle .middle-text{
+   font-size: 30rpx;
+   color: #9C9C9C;
+}
+
+
+.addButton-body{
+  position: fixed;
+  bottom: 10rpx;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 93%;
+}
+.addButton-body .addButton{
+   border-radius: 10rpx;
+   text-align: center;
+   padding: 10rpx 0rpx;
+   background: #8EB85C;
+   color: #fff;
+}
+
+/* //地址列表 */
+
+.sites-ul .sites-li{
+   font-size: 30rpx;
+   background: #fff;
+   padding: 30rpx 3%;
+   margin-top: 20rpx;
+}
+.sites-ul .sites-li view{
+   line-height: 50rpx;
+}
+.sites-ul .sites-li .sites-details{
+   color: #9E9E9E;
+}
+.sites-ul .sites-li .sites-function{
+   display: flex;
+   margin-top: 20rpx;
+}
+
+.sites-ul .sites-li .sites-function .sites-radio{
+    width: 65%;
+}
+.sites-ul .sites-li .sites-function .sites-redact{
+    border: solid 1rpx #8EB85C;
+    margin: 0 20rpx;
+    padding: 5rpx 7rpx;
+    color: #8EB85C;
+}
+.sites-ul .sites-li .sites-function .sites-delete{
+    border: solid 1rpx #8EB85C;
+    margin: 0 20rpx;
+    padding: 5rpx 7rpx;
+    color: #8EB85C;
+}
+.show-body{
+   font-size: 30rpx;
+}
+.show-hint{
+    text-align: center;
+    padding-top:20rpx; 
+}
+.show-text{
+  text-align: center;
+  color: #666666;
+  width: 500rpx;
+  padding-top:20rpx; 
+  padding-bottom: 20rpx;
+}
+.show-botton{
+   display: flex;
+   border: solid 1rpx #EBEBEB;
+}
+.show-botton view{
+   width: 50%;
+   text-align: center;
+   padding: 20rpx 40rpx;
+}
+.show-botton  .show-de{
+   color: #8EB85C;
+   border-left: solid 1rpx #EBEBEB;
+}

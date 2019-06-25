@@ -1,0 +1,132 @@
+<!--pages/my/my.wxml  个人中心-->
+<view id='userCenter'>
+  <!-- 主体内容 -->
+  <view class="content">
+    <view class="rk-users-info">
+      <view class='users-infoBox'>
+        <view class='HeadImgBox'>
+          <image src="../../imgs/位图@2x.png" mode='{{mod[2]}}' class="head-img"></image>
+          <view class="nick">遇见最好的自己</view>
+        </view>
+        <view class="vipGradeBox">
+          <view class="vipGrade i">
+            <image src="../../imgs/my/userGradeOne.png" mode='widthFix'></image>
+          </view>
+          <view class="minVipGrade i">
+            <image src="../../imgs/my/xingxing.png" mode='widthFix'></image>
+            <text>×5</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- 用户账户 -->
+      <view class="user-order-static user-order-static1 marginT5">
+        <navigator href="javascript:void(0);" class="item a">
+          <view class="userData">
+            0.00
+          </view>
+          <view class="p">康贝</view>
+        </navigator>
+
+        <navigator url='../myCollect/myCollect' class="item a">
+          <view class="userData">
+            0.00
+          </view>
+          <view class="p">余额</view>
+        </navigator>
+
+        <navigator href="javascript:void(0);" class="item a">
+          <view class="userData">
+            0.00
+          </view>
+          <view class="p">收益记录</view>
+        </navigator>
+
+        <navigator href="javascript:void(0);" class="item a" onclick="pop();">
+          <view class="userData">
+            0.00
+          </view>
+          <view class="p">优惠券</view>
+        </navigator>
+      </view>
+
+      <!-- 加入会员 -->
+      <view class='vipCardBox'>
+        <view class='vipCard'>
+          <text>成为博民会员</text>
+          <view class='nowDiscount'>
+            立享优惠
+            <van-icon name="arrow" custom-style="line-height:30px" />
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 我的商城 -->
+    <view class='myMallBox'>
+      <view class='myMallTitle'>我的商城</view>
+      <view class="myMall">
+        <navigator href="javascript:void(0);" class="item a">
+          <view class="rk-icon i">
+            <image src="/imgs/my/address.png" mode='{{mod[2]}}'></image>
+          </view>
+          <view class="p">地址管理</view>
+        </navigator>
+
+        <navigator href="javascript:void(0);" class="item a">
+          <view class="rk-icon i">
+            <image src="/imgs/my/myOrder.png" mode='{{mod[2]}}'></image>
+          </view>
+          <view class="p">我的订单</view>
+        </navigator>
+
+        <navigator href="javascript:void(0);" class="item a" onclick="pop();">
+          <view class="rk-icon i">
+            <image src="/imgs/my/myTeam.png" mode='{{mod[2]}}'></image>
+          </view>
+          <view class="p">我的团队</view>
+        </navigator>
+      </view>
+    </view>
+
+    <!-- 个人中心导航 -->
+    <view class="rk-user-relevantHelp">
+      <navigator url='../orderDesc/orderDesc' class="item a">
+        <view class="rk-icon icon-order i">
+          <image src="/imgs/my/huodong.png" mode='{{mod[1]}}'></image>
+        </view>
+        <view class="p">活动</view>
+      </navigator>
+      <navigator url='../myAddress/myAddress' class="item a">
+        <view class="rk-icon icon-address i">
+          <image src="/imgs/my/wodetuijianren.png" mode='{{mod[1]}}'></image>
+        </view>
+        <view class="p">我的推荐人</view>
+      </navigator>
+      <navigator url='../shareRules/shareRules' class="item a">
+        <view class="rk-icon icon-rule i">
+          <image src="/imgs/my/liwu.png" mode='{{mod[1]}}'></image>
+        </view>
+        <view class="p">推荐有礼</view>
+      </navigator>
+      <navigator url='../userAgreement/userAgreement' class="item a">
+        <view class="rk-icon icon-user i">
+          <image src="/imgs/my/shezhi.png" mode='{{mod[1]}}'></image>
+        </view>
+        <view class="p">设置</view>
+      </navigator>
+      <navigator url='../question/question' class="item a">
+        <view class="rk-icon icon-question i">
+          <image src="/imgs/my/shoucang.png" mode='{{mod[1]}}'></image>
+        </view>
+        <view class="p">收藏</view>
+      </navigator>
+      <navigator url='../opinion/opinion' class="item a">
+        <view class="rk-icon icon-fankui i">
+          <image src="/imgs/my/kefu.png" mode='{{mod[1]}}'></image>
+        </view>
+        <view class="p">客服</view>
+      </navigator>
+    </view>
+  </view>
+</view>

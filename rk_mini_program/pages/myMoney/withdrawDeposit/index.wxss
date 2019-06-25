@@ -1,0 +1,132 @@
+/* pages/myMoney/withdrawDeposit /index.wxss */
+
+.with-body .with-uls{
+   width: 92%;
+   margin: 0 auto;
+}
+.with-body .with-uls .with-bank{
+   font-size: 28rpx;
+   color: #A7A7A7;
+   padding: 20rpx 0;
+}
+.with-body .with-uls .with-lis{
+   background: #fff;
+   display: flex;
+   font-size: 28rpx;
+   padding: 15rpx 20rpx;
+   border-radius: 20rpx;
+   padding-right: 0;
+   margin-bottom: 20rpx;
+   line-height: 50rpx;
+}
+.with-body .with-uls .with-lis .lis-left{
+   width: 30%;
+   color: #333333;
+}
+.with-body .with-uls .with-lis .list-right{
+   width: 65%;
+   color: #999999;
+   text-align: right;
+}
+.with-body .with-uls .with-lis .list-right input{
+   color: #DB0505;
+   font-weight: bold;
+}
+
+
+
+
+
+.with-body .with-uls .with-lis .list-icon{
+   color: #999999;
+   padding: 5rpx;
+}
+
+.sum .sum-body{
+   display: flex;
+   font-size: 28rpx;
+   padding: 30rpx 20rpx;
+   border-radius: 20rpx;
+   padding-right: 0;
+   background: #fff;
+   line-height: 50rpx;
+}
+.sum .sum-body .sum-title{
+   width: 30%;
+   color: #333333;
+}
+.sum .sum-body .sum-input{
+   width: 65%;
+}
+.sum .sum-body .sum-input input{
+   line-height: 70rpx;
+   text-align: right;
+   color: #DB0505;
+   font-weight: bold;
+} 
+.sum .sum-body .sum-icon{
+   color: #999999;
+}
+.sum .sum-procedure{
+   color: #DB0505;
+   font-size: 28rpx;
+   line-height: 70rpx;
+   font-weight: bold;
+}
+.sum-hint{
+   color: #999999;
+   font-size: 24rpx;
+}
+.balance .balance-body {
+   background: #fff;
+   margin: 15rpx 0;
+   padding: 20rpx 20rpx;
+   border-radius: 20rpx;
+}
+.balance .balance-body .balance-lis{
+   display: flex;
+   padding: 20rpx 0;
+}
+.balance .balance-body .balance-lis .a{
+   width: 50%;
+   font-size: 28rpx;
+}
+.balance .balance-body .balance-lis .text-right{
+   text-align: right;
+   color: #DB0000;
+   font-size: 36rpx;
+}
+/* //支付 */
+.payment-lis{
+   background: #fff;
+   display: flex;
+   font-size: 28rpx;
+   padding: 15rpx 20rpx;
+   border-radius: 20rpx;
+   padding-right: 0;
+   margin-bottom: 20rpx;
+   line-height: 50rpx;
+   margin-top: 20rpx;
+}
+.payment-lis .payment-left{
+   width: 30%;
+   color: #333333;
+}
+.payment-lis .payment-right{
+   width: 65%;
+   color: #999999;
+}
+.payment-lis .payment-icon{
+   color: #999999;
+   padding: 5rpx;
+}
+
+.withdraw{
+   text-align: center;
+   color: #fff;
+   background: #8EB85C;
+   font-size: 36rpx;
+   padding: 20rpx;
+   border-radius: 10rpx;
+   margin-top: 100rpx;
+}

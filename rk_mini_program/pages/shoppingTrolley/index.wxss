@@ -1,0 +1,128 @@
+/* pages/shoppingTrolley/index.wxss */
+.shopping-top{
+  background: #fff;
+}
+.shopping-top .top-body{
+  display: flex;
+  width: 93%;
+  margin: 0 auto;
+}
+.shopping-top .top-body .top-left{
+  font-size: 30rpx;
+  line-height: 50rpx;
+  font-weight: 500;
+  color: #000;
+  width: 80%;
+}
+.shopping-top .top-body .top-right{
+  width: 20%;
+  font-size: 33rpx;
+  text-align: right;
+  color: #FF5C32;
+}
+
+
+/* 商品列表 */
+.shopping-uls{
+   
+}
+.shopping-uls .shopping-lis{
+   margin-top: 20rpx;
+}
+.shopping-uls .shopping-lis .for-lis{
+   display: flex;
+   margin-left: 3%;
+   background: #fff;
+   padding: 40rpx 20rpx;
+}
+.shopping-uls .shopping-lis .for-lis .lis-checkbox{
+   width: 90rpx;
+   padding-top: 35rpx;
+}
+.shopping-uls .shopping-lis .for-lis .lis-imgs {
+   width: 170rpx;
+}
+.shopping-uls .shopping-lis .for-lis .lis-imgs image{
+   width: 120rpx;
+   height: 120rpx;
+}
+.shopping-uls .shopping-lis .for-lis .lis-details{
+   width: 210rpx;
+}
+.shopping-uls .shopping-lis .for-lis .lis-details .lis-name{
+   font-size: 34rpx;
+   font-weight: 500;
+}
+.shopping-uls .shopping-lis .for-lis .lis-details .lis-price{
+   font-size: 30rpx;
+   color: #FF5C32;
+   font-weight: 600;
+   line-height: 50rpx;
+}
+.shopping-uls .shopping-lis .for-lis .lis-details .lis-standard{
+   font-size: 25rpx;
+}
+.shopping-uls .shopping-lis .for-lis .lis-quantity{
+   padding-top: 70rpx;
+}
+
+.slide-right{
+  background: #FF5C32;
+  width: 130rpx;
+  line-height: 220rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+/* 最下边的结算 */
+.bottom{
+  position: fixed;
+  bottom: 0rpx;
+  padding: 0 3%;
+  width: 100%;
+  height: 130rpx;
+  background: #fff;
+}
+.bottom .bottom-body{
+  display: flex;
+  padding-top: 40rpx;
+}
+.bottom .bottom-body .bottom-left{
+  font-size: 30rpx;
+  width: 35%;
+}
+.bottom .bottom-body .bottom-right{
+   display: flex;
+   width: 65%;
+}
+.bottom .bottom-body .bottom-right .bottom-count{
+   font-size: 30rpx;
+   color: #999999;
+   width: 35%;
+}
+.bottom .bottom-body .bottom-right .bottom-count text{
+   color: #FF5C32;
+}
+.bottom .bottom-body .bottom-right .bottom-close{
+   text-align: center;
+   width: 55%;
+   padding: 20rpx 0;
+   margin-top: -13rpx;
+   font-size: 30rpx;
+   background: #8EB85C;
+   color: #fff;
+   border-radius: 10rpx;
+}
+
+.bottom .bottom-body .bottom-delete{
+  background: #8EB85C;
+  text-align: center;
+  color: #fff;
+  border-radius: 10rpx;
+  width: 38%;
+  margin-left: 20%;
+  padding: 20rpx 0;
+  margin-top: -13rpx;
+  font-size: 30rpx;
+}

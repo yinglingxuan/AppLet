@@ -1,0 +1,10 @@
+<!--pages/userCenter/myBankCard/index.wxml-->
+<view class='changeInfo'>
+  <block wx:for="{{num}}">
+  <view class='BankCard' bindtap='goBankCard'>
+    <image src='/imgs/my/BankCard.png' mode='scaleToFill'></image>
+    <text>{{item}}</text>
+  </view>
+  </block>
+</view>
+<navigator class='changeBtn' url="/pages/userCenter/add_bankCard/index">添加银行卡</navigator>

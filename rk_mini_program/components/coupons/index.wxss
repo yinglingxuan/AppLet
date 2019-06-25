@@ -1,0 +1,103 @@
+/* components/coupons/index.wxss */
+.couponsHide-body{
+  height: 550rpx;
+  background: #fff;
+  width: 100%;
+}
+.couponsHide-body .couponsHide-border{
+   width: 93%;
+   margin: 0 auto;
+}
+.couponsHide-body .couponsHide-border .couponsHide-top{
+   border-bottom:solid 1rpx #F0F0F0; 
+   padding-bottom: 20rpx;
+}
+.couponsHide-body .couponsHide-border .couponsHide-top .couponsHide-hide{
+   position: relative;
+   left: 95%;
+   margin-top: 20rpx;
+   color: #CCCCCC;
+}
+.couponsHide-body .couponsHide-title{
+    width: 100rpx;
+    font-size: 30rpx;
+    text-align: center;
+    margin: 0 auto;
+    color: #6F6A6A;
+    margin-top: -20rpx;
+    background: #fff;
+}
+
+.couponsHide-uls{
+    width: 93%;
+    margin: 0 auto;
+}
+
+/* 优惠卷滚动列表 */
+.scroll-header{
+  height: 430rpx;
+  white-space: nowrap; /*这个很重要，*/
+}
+/* 优惠卷列表的样式 */
+.scroll-header .lists{
+    width: 100%;
+    display: flex;
+    padding: 45rpx 0;
+    margin: 30rpx 0;
+}
+.background-url{
+    background:url('https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/yiling01.png') no-repeat;
+    background-size: 100%;
+}
+.background-url-one{
+    background:url('https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/124562.png') no-repeat;
+    background-size: 100%;
+}
+.scroll-header .lists .left{
+   width: 220rpx;
+   font-size: 25rpx;
+   text-align: center;
+   color: #8EB85C;
+}
+.scroll-header .lists .left text{
+   font-size: 40rpx;
+   font-weight: 600;
+}
+.scroll-header .lists .centre{
+    width: 45%;
+    font-size: 22rpx;
+    text-align: center;
+    line-height: 50rpx;
+    color: #666666;
+}
+.scroll-header .lists .centre text{
+    background: #E5F5D3;
+    border-radius: 40rpx;
+    padding: 5rpx 10rpx;
+    color: #8EB85C;
+}
+
+.scroll-header .lists .right{
+    font-size: 28rpx;
+}
+.scroll-header .lists .right .use{
+    border-radius: 40rpx;
+    border: solid 1rpx #8EB85C;
+    padding: 10rpx;
+    margin-top: 20rpx;
+    color: #8EB85C;
+}
+.scroll-header .lists .right .get{
+    border-radius: 40rpx;
+    background: #8EB85C;
+    padding: 10rpx;
+    margin-top: 20rpx;
+    color: #fff;
+}
+
+/* 去掉默认滚动条 */
+/* ::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+} */

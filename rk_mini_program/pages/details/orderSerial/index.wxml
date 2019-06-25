@@ -1,0 +1,12 @@
+<!--pages/details/orderSerial /index.wxml-->
+<view>
+    <view class='order-title'>订单编号</view>
+    <view class='order-money'><text>￥</text>20.75</view>
+    <view class='order-body'>
+        <view class='order-text'>收款方</view>
+        <view class='order-name'>博民健康商城</view>
+    </view>
+    <view class='order-buttom'>
+        立即支付
+    </view>
+</view>

@@ -1,0 +1,135 @@
+<!--pages/details/affirmOrder/index.wxml-->
+<view class='body' style='height:{{winHeight}}px'>
+
+    <view class='backgrounds'>
+        <view class='one-key-site' bindtap="chooseAddress"  wx:if='{{addressInfo==null}}'>
+            <view class='site-left'>
+                <view class='site-icon'>
+                    <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/weixindizhi@2x.png'></image>
+                </view>
+                <view class='site-text'>一键获取微信地址</view>
+            </view>
+            <view class='site-imgs'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fanhui@2x.png'></image>
+            </view>
+        </view>
+        <view class='newAdd' wx:if='{{addressInfo==null}}'  bindtap='onAddSites'>
+            <view class='add-text'>
+                新增收货地址
+            </view>
+            <view class='add-imgs'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fanhui@2x.png'></image>
+            </view>
+        </view>
+
+
+        <view class='location' wx:if='{{addressInfo!=null}}'>
+            <view class='location-body'>
+                <view class='location-left'>
+                    <view class='location-name'>{{addressInfo.userName}} {{addressInfo.telNumber}}</view>
+                    <view class='location-site'>{{addressInfo.provinceName}} {{addressInfo.cityName}} {{addressInfo.countyName}} {{addressInfo.detailInfo}}</view>
+                </view>
+                <view class='location-right'>
+                    <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fanhui@2x.png'></image>
+                </view>
+            </view>
+            
+        </view>
+    </view>
+    
+
+    <view class='order-ul'>
+        <view class='order-lis'>
+            <view class='order-left'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/22222@2x.png'></image>
+            </view>
+            <view class='order-right'>
+                <view class='order-name'>韩国JMsolution深水炸弹面膜10片 水谷光急 救针剂…</view>
+                <view class='order-money'>¥180</view>
+                <view class='order-standard'>
+                    <view class='order-selected'>已选：260ml</view>
+                    <view class='order-count'>
+                         <van-stepper input-width='100rpx;'  value="{{ count }}" integer min="1"  max="99" step="1" bind:change="onChange"></van-stepper>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class='distribution'>
+        <view class='distribution-top'>
+            <view class='distribution-left'>配送方式</view>
+            <view class='distribution-right'>包邮</view>
+        </view>
+         <view class='distribution-top' bindtap='onShows'>
+            <view class='distribution-left'>优惠券：</view>
+            <view class='distribution-right'>
+                <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/fanhui@2x.png'></image>
+            </view>
+        </view>
+         <view class='distribution-top'>
+            <view class='distribution-left'>活动优惠：<text>(高级会员）优惠</text></view>
+            <view class='distribution-right orange'>-¥50.00</view>
+        </view>
+         <view class='distribution-top'>
+            <view class='distribution-left'>合计</view>
+            <view class='distribution-right orange'>¥130.0</view>
+        </view>
+    </view>
+
+    <view class='pay'>
+        <view class='pay-body'>
+            <view class='pay-title'>实际支付</view>
+            <view class='pay-price'>¥178.00</view>
+            <view class='pay-bottom'>提交订单</view>
+        </view>
+    </view>
+
+    <!-- 优惠卷的弹框 -->
+    <view>
+        <van-popup show="{{ show }}" position="bottom" overlay="{{ true }}" bind:close="onClose">
+           <view class='couponsHide-body'> 
+              <view class='couponsHide-border'>
+                  <view class='couponsHide-top'>
+                      <view class='couponsHide-hide'    data-statu="hide" bindtap='onClose'><van-icon name="cross" size="17px"/></view>
+                  </view>
+              </view>
+              <view class='couponsHide-title'>优惠卷</view>
+
+              <view class='couponsHide-uls'>
+                  <scroll-view scroll-y class='class="scroll-header"'>
+                      <van-radio-group value="{{ radio }}" bind:change="onRadio">
+                          <view class='lists background-url' >
+                              <view class='left'>
+                                  ￥<text>5</text>
+                                  <view>满168使用</view>
+                              </view>
+                              <view class='centre'>
+                                  <view><text>康康券</text>全场商品可用</view>
+                                  <view>05月31日 00:00 过期</view>
+                              </view>
+                              <view class='right'>
+                                  <van-radio  name="1" checked-color="#07c160"></van-radio>
+                              </view>
+                          </view>
+
+                          <view class='lists background-url-one'>
+                              <view class='left'>
+                                  ￥<text>5</text>
+                                  <view>满168使用</view>
+                              </view>
+                              <view class='centre'>
+                                  <view><text>康康券</text>全场商品可用</view>
+                                  <view>05月31日 00:00 过期</view>
+                              </view>
+                              <view class='right'>
+                                  <van-radio  name="2" checked-color="#07c160"></van-radio>
+                              </view>
+                          </view>
+                      </van-radio-group>
+                  </scroll-view>
+              </view>
+          </view>
+        </van-popup>
+    </view>
+</view>

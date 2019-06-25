@@ -1,0 +1,139 @@
+<!--pages/community/index.wxml-->
+<view>
+    <view class='community-top'>
+        <view class='community-left' bindtap='activity' data-id='1'><text class="{{activity=='1'?'text-border':''}}">资讯</text></view>
+        <view class='community-right' bindtap='activity' data-id='2'><text class="{{activity=='2'?'text-border':''}}">活动</text></view>
+    </view>
+
+    <!-- 资讯主体 -->
+    <view class='message-subject' wx:if='{{activity==1}}'>
+        <view class='community-imgsBody'>
+            <swiper  class="swiper-block"  previous-margin="70rpx" next-margin="70rpx" current="0" bindchange="swiperChange">
+                <block wx:for="{{imgs}}" wx:index="{{index}}">
+                    <swiper-item class="swiper-item">
+                        <view class="swiper-body {{swiperIndex == index ? 'active' : ''}}">
+                          <image mode="aspectFill" src="{{item}}" class="slide-image {{swiperIndex == index ? 'active space' : 'imgs-book'}}"/>
+                          <view class="imgs-name">
+                              瑞康第43期线下体验训练营
+                          </view>
+                          <view class='imgs-advance'>
+                              <view class='imgs-date'>2019.5.12 08:00-2019.5.13 18.00</view>
+                              <view class='imgs-button'>进行中</view>
+                          </view>
+                        </view>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view class='community-uls'>
+          <view class='community-titles'>
+              <view class='community-blood' bindtap='bloodBorder' data-id='1'><text class='blood-border' class="{{bloodBorder=='1'?'blood-border':''}}">血糖</text></view>
+              <view class='community-pressure'  bindtap='bloodBorder' data-id='2'><text class="{{bloodBorder=='2'?'blood-border':''}}">血压</text></view>
+          </view>
+
+          <view class='community-lis' bindtap='onDetails'>
+            <view class='list-body'>
+                <view class='lis-text'>
+                    <view class='lis-title'>
+                      语雀是一款优雅高效的在线文档编 辑与协同工具， 让每个
+                    </view>
+                    <view class='lis-message'>
+                        <view class='lis-date'>2019-03-27</view>
+                        <view class='lis-icon'><van-icon name="eye-o"  size='35rpx'/></view>
+                        <view class='lis-count'>5567</view>
+                    </view>
+                </view>
+                <view class='lis-imgs'>
+                    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+                </view>
+            </view>
+          </view>
+
+
+          <view class='community-lis'  bindtap='onDetails'>
+            <view class='list-body'>
+                <view class='lis-text'>
+                    <view class='lis-title'>
+                      语雀是一款优雅高效的在线文档编 辑与协同工具， 让每个
+                    </view>
+                    <view class='lis-message'>
+                        <view class='lis-date'>2019-03-27</view>
+                        <view class='lis-icon'><van-icon name="eye-o"  size='35rpx'/></view>
+                        <view class='lis-count'>5567</view>
+                    </view>
+                </view>
+                <view class='lis-imgs'>
+                    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+                </view>
+            </view>
+          </view>
+
+
+          <view class='community-lis'  bindtap='onDetails'>
+            <view class='list-body'>
+                <view class='lis-text'>
+                    <view class='lis-title'>
+                      语雀是一款优雅高效的在线文档编 辑与协同工具， 让每个
+                    </view>
+                    <view class='lis-message'>
+                        <view class='lis-date'>2019-03-27</view>
+                        <view class='lis-icon'><van-icon name="eye-o"  size='35rpx'/></view>
+                        <view class='lis-count'>5567</view>
+                    </view>
+                </view>
+                <view class='lis-imgs'>
+                    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+                </view>
+            </view>
+          </view>
+
+
+          <view class='community-lis'  bindtap='onDetails'>
+            <view class='list-body'>
+                <view class='lis-text'>
+                    <view class='lis-title'>
+                      语雀是一款优雅高效的在线文档编 辑与协同工具， 让每个
+                    </view>
+                    <view class='lis-message'>
+                        <view class='lis-date'>2019-03-27</view>
+                        <view class='lis-icon'><van-icon name="eye-o"  size='35rpx'/></view>
+                        <view class='lis-count'>5567</view>
+                    </view>
+                </view>
+                <view class='lis-imgs'>
+                    <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+                </view>
+            </view>
+          </view>
+        </view>
+    </view>
+
+    <!-- 活动主体 -->
+    <!-- <view wx:if='{{activity==2}}' class='activity-Null'>
+        <view class='null-imgs'>
+            <image src='https://jibao-rk0514.oss-cn-beijing.aliyuncs.com/images/dingda@2x.png'></image>
+        </view>
+        <view class='null-title'>暂时没有活动</view>
+    </view> -->
+
+
+
+    <view wx:if='{{activity==2}}'>
+        <view class='activity-lis' bindtap='onActivity'>
+            <view class='activity-imgs'>
+                <image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1785783109,1334449550&fm=27&gp=0.jpg'></image>
+            </view>
+            <view class='activity-title'>
+                瑞康第43期线下体验训练营
+            </view>
+            <view class='activity-advance'>
+                <view class='activity-date'>
+                    2019.5.12 08:00-2019.5.13 18.00
+                </view>
+                <view class='activity-button'>
+                    进行中
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

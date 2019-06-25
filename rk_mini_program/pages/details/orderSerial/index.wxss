@@ -1,0 +1,41 @@
+/* pages/details/orderSerial /index.wxss */
+.order-title{
+   text-align: center;
+   font-size: 30rpx;
+   line-height: 70rpx;
+}
+.order-money {
+   text-align: center;
+   font-size: 60rpx;
+   font-weight: bold;
+   line-height: 100rpx;
+}
+.order-money text{
+   font-size: 40rpx;
+}
+.order-body{
+   display: flex;
+   width: 90%;
+   padding: 20rpx 40rpx;
+   border-top: solid 1rpx #F2F2F4;
+   border-bottom: solid 1rpx #F2F2F4;
+   background: #fff;
+}
+.order-body view{
+   width: 50%;
+}
+.order-body .order-text{
+   color: #989699;
+}
+.order-body .order-name{
+   text-align: right;
+}
+.order-buttom{
+   width: 90%;
+   margin: 50rpx auto;
+   background: #8EB85C;
+   border-radius: 10rpx;
+   padding: 20rpx 20rpx;
+   text-align: center;
+   color: #fff;
+}

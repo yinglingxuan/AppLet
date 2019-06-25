@@ -1,0 +1,82 @@
+/* pages/search/index.wxss */
+
+/* 搜索的长框 */
+.searchs-heads{
+  height: 100rpx;
+  border-bottom: solid 1rpx #F3F1F1;
+}
+/* 搜索居中的位置 */
+.searchs{
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 40rpx;
+  display: flex;
+  background: #F5F5F5;
+  color: #666666;
+  font-size: 30rpx;
+}
+/* 搜索的图标 */
+.searchs .searchs-imgs{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  margin-right: 15rpx;
+}
+.searchs .searchs-imgs image{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+/* 输入框 */
+.searchs .searchs-input{
+  width: 75%;
+}
+/* 搜索按钮 */
+.searchs .searchs-submit{
+  padding-right: 10rpx;
+  line-height: 50rpx;
+  text-align: right;
+}
+/* 搜索数据 */
+.searchs-body{
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* 标题 */
+.searchs-body .searchs-title{
+    font-size: 35rpx;
+    margin-top: 20rpx;
+}
+.searchs-body .searchs-ul{
+   display: flex;
+   flex-wrap: wrap;
+}
+.searchs-body .searchs-ul .searchs-li{
+  border-radius: 40rpx;
+  background: #F5F5F5;
+  margin: 18rpx 17rpx;
+  padding: 8rpx 30rpx;
+  font-size: 30rpx;
+  display: flex;
+}
+.searchs-body .searchs-ul .searchs-li .hot image{
+   width: 30rpx;
+   height: 30rpx;
+   margin-right: 10rpx;
+   margin-top: 3rpx;
+}
+/* 历史搜索部分 */
+.history{
+  margin-top: 40rpx;
+  display: flex;
+  font-size: 35rpx;
+}
+.history .titles{
+    width: 94%;
+}
+.history .icon-delete image{
+  width: 35rpx;
+  height: 40rpx;
+}
